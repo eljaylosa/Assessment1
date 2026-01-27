@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="img/webtabicon.png">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script src="https://kit.fontawesome.com/57a739b7d7.js" crossorigin="anonymous"></script>
+  <title>Contact Page</title>
+  <style>
+
+
+    body {
+      background-color: #e0d9d9;
+      background-image: url();
+      height: 100%;
+      width: 100%;
+    }
+    body:active {
+      cursor: pointer;
+    }
+    .git-container {
+      display: flex;
+      margin-left: 280px;
+      height: 800px;
+    }
+    .git-container .git-description {
+     padding: 35px;
+    }
+   
+    .git-form {
+      justify-content: center;
+      margin-left: 150px;
+      padding: 40px;
+      padding-top: 110px;
+      height: 100%;
+      width: 100%;
+      border-radius: 100px 0px 0px 100px;
+      background-color: #f5fcf5;
+      box-shadow: -30px 10px 20px rgb(150, 148, 148);
+      animation-name: form-anim;
+      animation-duration: 1.2s;
+      position: relative;
+      }
+    
+      @keyframes form-anim {
+        0%   {left:100%;}
+        100%  {left:0px;}
+       
+      }
+
+      h1 {
+        animation-name: h1-anim;
+        animation-duration: 1s;
+        position: relative;
+        
+      }
+
+      @keyframes h1-anim {
+        0% {transform: scale(0.5, 0.5); }
+        100% {transform: scale(1, 1);}
+      }
+
+      h3 {
+        animation-name: h1-anim-2;
+        animation-duration: 1.2s;
+        position: relative;
+       
+      }
+
+      @keyframes h1-anim-2 {
+        0% {transform: scale(0.2, 0.2); }
+        100% {transform: scale(1, 1);}
+      }
+
+      form {
+        margin-left: 35px;
+      }
+    .git-links {
+      display: flex;
+      background-color: whitesmoke;
+      border-radius: 50px 0px 50px 0px;
+      padding: 10px;
+      margin-top: 90px;
+      font-size: xx-large;
+      width: 510px;
+      height: 200px;
+      justify-content: center;
+      text-align: justify;
+      animation-name: git-anim;
+      animation-duration: 1.2s;
+      position: relative;
+    }
+
+    @keyframes git-anim {
+         0%   {top: 200px;}
+        100%  {top: 0px;}
+    }
+
+    .git-links ul li a i {
+      margin-right: 10px;
+    }
+    .git-links ul li a:hover {
+      text-decoration: underline;
+    }
+    .git-links ul li a i:hover {
+      transition: .3s;
+      transform: scale(1.5, 1.5);
+    }
+    .git-links i {
+      width: 40px;
+      height: 40px;
+      
+    }
+    .git-links ul li {
+      list-style: none;
+      margin-top: 10px;
+    }
+    .git-links ul li a {
+      text-decoration: none;
+      color: black;
+      margin-left: 10px;
+    }
+    .des-text {
+      font-size: xx-large;
+      margin-top: 50px;
+    }
+    .des-text h3 {
+      margin-top: 20px;
+      font-size: xx-large;
+    }
+
+    p {
+      margin: 20px;
+      font-size: x-large;
+    }
+    .names {
+      display: flex;
+      
+    }
+    .name {
+      width: 280px;
+    }
+   .lname {
+    margin-left: 40px;
+   }
+   .terms {
+    display: flex;
+    
+   }
+   .input-box {
+   
+    width: 25px;
+    margin-top: 6px;
+   }
+   .tap {
+    margin-top: 9px;
+    margin-left: 15px;
+   }
+   .tap a {
+    text-decoration: none;
+    color: black;
+    
+   }
+   button {
+    margin-top: 5px;
+    padding: 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: large;
+    transition: .3s;
+   }
+   button:hover {
+    animation-name: btn-hover;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform: scale(1.1, 1.1);
+    box-shadow: 5px 5px black;
+   }
+  input  {
+    border-radius: 50px;
+    border: 0.5px solid black;
+  }
+  textarea {
+    font-size: x-large;
+
+  }
+  .i {
+    box-shadow: 1px 2px 5px gray;
+    font-size: large;
+  }
+  .input-box {
+    cursor: pointer;
+  }
+  span {
+    font-weight: 700;
+  }
+  span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  textarea {
+    resize: none;
+  }
+  </style>
+</head>
+<body>
+  <main>
+    <nav class="nav_links_page">
+      <a href="index.html" class="title"><img src="img/New Logo Website.png" alt="" height="180px" width="180px"></a>
+      <div class="nav_links"> 
+        <ul>
+          <li><a class="a" href="index.html">Home</a></li>
+        
+          <li><a class="a" href="recipes2.html">Menu</a></li> 
+          
+          <li><a class="a" href="about.html">About Us</a></li>
+         
+          <li><a class="git" style="background-color:#F9EFDB; border: 3px solid black;"  href="contact.html">Get In Touch</a></li> 
+
+          <li><a class="get" href="../../portfolio.html">Log Out</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="git-container">
+      <div class="git-description">
+        <div class="des-text">
+          <h1>Let's get in touch</h1>
+          <h3>Don't be afraid to message us!</h3>
+        </div>
+       
+        <div class="git-links">
+          <ul>
+            <div class="email"><li><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new" target="_blank"><i class="fa-solid fa-envelope"></i>Cookinghub@gmail.com</a></li></div>
+            <div class="phone"><li><a href="0926632764" target="_blank"><i class="fa-solid fa-phone" ></i>09426632764</a></li></div>
+            <div class="location"><li><a href="https://maps.app.goo.gl/9uKzkFAtujxqfCFS9" target="_blank"><i class="fa-solid fa-location-dot"></i>Limay Senior High School</a></li></div>
+          </ul>
+        </div>
+
+      </div>
+      <div class="git-form">
+        <form action="">
+
+          <div class="names">
+            <div class="fname">
+              <p>First Name</p>
+              <input id="i" class="f name i" type="text" onclick="fname()" required>
+            </div>
+              
+            <div class="lname">
+             <p>Last Name</p>
+              <input id="i" class="l name i" type="text" onclick="fname()" required>
+            </div>
+          </div>
+         
+          <p>Email (Optional)*</p>
+          <input id="id" class="i" type="email" onclick="fname()">
+
+          <p>Message</p>
+          <textarea id="i" name="message" id="msg" cols="50" rows="5"></textarea>
+          <div class="terms">
+            <input id="i" class="input-box" type="checkbox" required>
+          <p class="tap">I accept the <a href="tos.html"><span>Terms of Service</span></a></p>
+          </div>
+          <button onclick="soundfx()">Send Message</button>
+
+        </form>
+      </div>
+  
+    </div>
+    <script>
+
+      function fname() {
+      var sound2 = document.getElementById("audio2");
+      sound2.play();
+    }
+      function soundfx() {
+      var sound = document.getElementById("audio");
+      sound.play();
+
+      var input = document.getElementById("id").value
+
+      if (input == "") {
+        alert ("please fill all fields")
+      }
+
+      else {
+        alert ("thank You for sending a Message!")
+      }
+      
+    }
+
+    
+
+
+
+    </script>
+
+  <audio id="audio2">
+    <source src="audio/Wait a Minute who are You Meme Sound  Sound Effect for editing (1).mp3">
+  </audio>
+     <audio id="audio">
+      <source src="audio/jepoy dizon jotaro.mp3">
+    </audio>
+
+  </main>
+</body>
+</html>

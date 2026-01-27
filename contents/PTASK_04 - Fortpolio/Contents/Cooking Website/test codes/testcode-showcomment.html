@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Show Comment on Button Click</title>
+</head>
+<body>
+
+<button onclick="displayComment()">Show Comment</button>
+<p id="comment" style="display: none;">This is the comment you want to display.</p>
+
+<script>
+  function displayComment() {
+    var comment = document.getElementById('comment');
+    comment.style.display = 'block'; // Show the comment
+  }
+</script>
+
+</body>
+</html>

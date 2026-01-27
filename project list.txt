@@ -1,0 +1,8 @@
+project list:
+  cat project
+  we collect
+  personal info
+  cooking hub
+  personal portfolio
+  quiz website
+  calculator

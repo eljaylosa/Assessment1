@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Philosopher', Poppins;
+  background-image: url(img/bg-img.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* This Section is for the Nav Bar*/
+.nav-bar-container {
+  font-size: medium;
+  display: flex;
+  padding: 10px;
+  height: 100px;
+  width: 100%;
+  background: transparent;
+  transition: .5s;
+  backdrop-filter: blur(15px);
+  justify-content: center;
+}
+.nav-bar-container:hover {
+  box-shadow: 0px 5px gray;
+}
+.nav-bar {
+  display: flex;
+  align-items: center;
+}
+.nav-bar .logo {
+  margin-right: 800px;
+}
+.nav-links {
+  display: flex;
+}
+.nav-links ul {
+  display: flex;
+  list-style-type: none;
+}
+.nav-links ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  margin: 10px 20px;
+}
+
+/* This Section is For the Main Container */
+section {
+  margin-top: 10%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.title-start {
+  margin-bottom: 20px;
+}
+.main-container {
+  transition: 0.5s;
+  padding: 50px;
+  border-radius: 50px;
+  font-weight: 500;
+}
+.main-container h1 {
+  color: whitesmoke;
+  font-size: 90px;
+  border-bottom: 5px white solid;
+  margin-bottom: 10px;
+  text-shadow: 2.5px 1px black;
+  transition: 0.5s;
+}
+.main-container h3 {
+  color: rgb(214, 212, 212);
+  font-size: 30px;
+  text-shadow: 2.5px 1px black;
+}
+.main-container a {
+  text-decoration: none;
+}
+.main-container:hover {
+  cursor: pointer;
+  backdrop-filter: blur(5px);
+  background: transparent;
+  border: 1px solid gray;
+}
+.main-container:hover .links-container {
+  display: block;
+  color: black;
+}
+.main-container:hover .links-container a .fa-facebook {
+  animation-name: icons-anim;
+  animation-duration: 0.5s;
+  animation-delay: .1s;
+  
+}
+.main-container:hover .links-container a .fa-youtube {
+  animation-name: icons-anim;
+  animation-duration: 0.5s;
+  animation-delay: .2s; 
+}
+.main-container:hover .links-container a .fa-discord {
+  animation-name: icons-anim;
+  animation-duration: 0.5s;
+  animation-delay: .3s;
+}
+.main-container:hover .links-container a .fa-instagram {
+  animation-name: icons-anim;
+  animation-duration: 0.5s;
+  animation-delay: .4s;
+}
+.main-container:hover .links-container a .fa-tiktok {
+  animation-name: icons-anim;
+  animation-duration: 0.5s;
+  animation-delay: .5s;
+}
+.main-container:hover .links-container a .fa-twitter {
+  animation-name: icons-anim;
+  animation-duration: 0.5s;
+  animation-delay: .6s;
+}
+@keyframes icons-anim {
+  from 
+  {
+    transform: scale(0);
+    color: white;
+  }
+  to
+  {
+    transform: scale(1);
+    color: black;
+  }
+}
+
+.choose-server {
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  align-items: center;
+}
+select {
+  width: 250px;
+  height: 50px;
+  background-color: white;
+  background: transparent;
+  backdrop-filter: blur(10px);
+  font-size: large;
+  border: 1px solid gray;
+  border-radius: 50px;
+  transition: 0.5s;
+  padding: 10px;
+}
+select:hover {
+  cursor: pointer;
+  color: white;
+  border-radius: 25px;
+}
+option {
+  background-color: rgb(168, 168, 168);
+  color: white;
+}
+
+
+.links-container {
+  display: none;
+  margin-top: 30px;
+}
+.links-container p {
+  margin-bottom: 20px;
+  font-size: larger;
+  font-weight: bold;
+}
+.links-container i {
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  margin: 0px 15px;
+  transition: 0.2s;
+  
+}
+.links-container i:hover {
+  transform: scale(1.1);
+}
+
+.links-container a .fa-facebook:hover  {
+  color: blue;
+}
+.links-container a .fa-youtube:hover  {
+  color: red;
+}
+
+.links-container a .fa-discord:hover  {
+  color: blue;
+}
+
+.links-container a .fa-instagram:hover  {
+  color: pink;
+}
+
+.links-container a .fa-tiktok:hover  {
+  color: black;
+}
+
+.links-container a .fa-twitter:hover  {
+  color: rgb(0, 119, 255);
+}
+
+
+

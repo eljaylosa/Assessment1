@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="contact.css">
+  <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/57a739b7d7.js" crossorigin="anonymous"></script>
+  <script src="contact.js"></script>
+  <link rel="icon" type="image/x-icon" href="img/Website Icon Logo.png">
+  <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+
+  <title>Contact Me</title> 
+
+</head>
+<style>
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  
+  width: 100%;
+  height: 100%;
+  font-family: 'Philosopher', Poppins;
+}
+
+/* This Section is for the Nav Bar*/
+.nav-bar-container {
+  font-size: medium;
+  display: flex;
+  padding: 10px;
+  height: 100px;
+  width: 100%;
+  background: transparent;
+  transition: .5s;
+  backdrop-filter: blur(15px);
+  justify-content: center;
+  overflow: hidden;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + section {
+  padding-top: 120px;
+}
+.nav-bar-container:hover {
+  box-shadow: 0px 5px gray;
+}
+.nav-bar {
+  display: flex;
+  align-items: center;
+}
+.nav-bar .logo {
+  margin-right: 800px;
+}
+.nav-links {
+  display: flex;
+}
+.nav-links ul {
+  display: flex;
+  list-style-type: none;
+}
+.nav-links ul li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  margin: 10px 20px;
+}
+
+/* this section is for the main content*/
+
+section {
+  height: 100%;
+  width: 100%;
+  padding-top: 50px;
+}
+
+section .title{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: x-large;
+}
+.title h1 span {
+  font-size: 50px;
+  font-weight: bold;
+}
+.names {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.names .fields {
+  width: 100%;
+}
+form {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+fieldset {
+  padding: 10px;
+  margin: 5px 10px;
+}
+
+legend {
+  font-size: medium;
+}
+
+input {
+  border: none;
+  outline: none;
+  padding: 5px;
+  width: 100%;
+}
+textarea {
+  border: none;
+  outline: none;
+  padding: 5px;
+  resize: none;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.buttons button {
+  padding: 15px 30px;
+  background-color: black;
+  color: white;
+  font-size: medium;
+  transition: .3s;
+}
+.buttons button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+.confirmation {
+  padding: 10px 15px;
+}
+
+
+
+/* This Section is for the Footer*/
+footer {
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+  margin-top: 155px;
+  width: 100%;
+  height: 250px;
+  background-color: rgb(241, 234, 234);
+}
+.links {
+  display: flex;
+  justify-content: center;
+  
+}
+footer .links ul {
+  display: flex;
+
+}
+footer .links ul li{
+  list-style: none;
+
+}
+footer .links ul li a {
+  text-decoration: none;
+  color: black;
+  margin: 20px;
+  font-size: large;
+  transition: .2s;
+}
+footer .links ul li a:hover {
+  text-decoration: underline;
+}
+
+.socials-links {
+  display: flex;
+  justify-content: center;
+}
+.socials-links a {
+  margin: 0px 10px;
+  font-size: 30px;
+  color: black;
+  transition: .3s;
+}
+.socials-links a:hover {
+  transform: scale(1.1);
+}
+.socials-links a:hover .fa-facebook {
+  color: blue;
+}
+.socials-links a:hover .fa-youtube {
+  color: red;
+}
+.socials-links a:hover .fa-discord {
+  color: blue;
+}
+.socials-links a:hover .fa-instagram {
+  color: rgb(182, 95, 110);
+}
+.socials-links a:hover .fa-tiktok {
+  color: black;
+}
+.socials-links a:hover .fa-twitter {
+  color: blue;
+}
+</style>
+<body>
+  <main>
+    <div class="nav-bar-container" id="nav-bar">
+      <nav class="nav-bar">
+        <div class="logo">
+          <a href="main-index.html"><img src="img/Website-Logo.png" alt="logo" height=75px"></a>
+        </div>
+         
+        <div class="nav-links">
+          <ul>
+            <li><a href="main-index.html">HOME</a></li>
+            <li><a href="resume.html">ABOUT ME</a></li>
+            <li><a href="portfolio.html">PORTFOLIO</a></li>
+            <li><a href="contact.html">CONTACT ME</a></li>
+            <li><a href="Log in/LogIn-UI.html">LOG OUT</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <section>
+      <div class="title">
+        <h1><span>Hi There!</span> <br> Lets Talk About Your Thoughts</h1>
+      </div>
+
+        <form id="contact-form">
+          <div class="form-container">
+            <div class="names">
+              <fieldset class="fields">
+                <legend>Your Fullname</legend>
+                <input type="text" name="user-name" required placeholder="Write your fullname" id="fullname" maxlength="50"> 
+              </fieldset>
+  
+              <fieldset class="fields">
+                <legend>Your Email</legend>
+                <input type="text" name="email" required placeholder="Write your email" id="email" maxlength="50">
+              </fieldset>
+            </div>
+  
+            <div class="message">
+              <fieldset>
+                <legend>Your Message</legend>
+                <textarea name="message" id="txt-area" cols="70" rows="15" required placeholder="Write your message"></textarea>
+              </fieldset>
+            </div>
+            <div class="files">
+              <input type="file" name="files">
+            </div>
+            <div class="confirmation">
+              <p id="popup"></p>
+            </div>
+            <div class="buttons">
+              <button onclick="SendMessage()">Send Message</button>
+            </div>
+          </div>
+        </form>
+
+        <footer>
+          <div class="logo">
+            <a href="main-index.html"><img src="img/Eljay.png" alt="logo" height=75px"></a>
+          </div>
+          <div class="links">
+            <ul>
+              <li><a href="resume.html">About Me</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+          </div>
+          <div class="socials-links">
+                <a href="https://www.facebook.com/ljlosa.69/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.youtube.com/channel/UCW8XF8E4Q8L4HJE-rb8V0cw" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://discord.gg/qTSyUrqA" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                <a href="https://www.instagram.com/ljlosa_g/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@yaabaaii" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://twitter.com/ljlosa" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+      </footer>
+    </section>
+  </main>
+  <script>
+    window.onscroll = function() {ScrollFunction()}; 
+
+    var navbar = document.getElementById('nav-bar');
+    var scrollSticky = navbar.offsetTop;
+
+    function ScrollFunction() {
+      if (window.pageYOffset >= scrollSticky) {
+        navbar.classList.add("sticky")
+      }
+      else {
+        navbar.classList.remove("sticky");
+      }
+    }
+  </script>
+</body>
+</html>

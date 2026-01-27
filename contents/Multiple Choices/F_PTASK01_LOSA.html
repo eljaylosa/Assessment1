@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../../img/Website Icon Logo.png">
+  <title>Multiple Choices</title>
+</head>
+<style>
+  body {
+    background-color: antiquewhite;
+    padding: 10px 30px;
+  }
+  h1 {
+    text-align: center;
+    justify-content: center;
+  }
+  .container {
+    justify-content: center;
+   
+  }
+  .question-container {
+    justify-content: center;
+    height: 180px;
+    margin-bottom: 30px;
+    padding: 15px;
+    padding-left: 40px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 5px 10px gray;
+  }
+p {
+  font-size: x-large;
+  margin-bottom: 20px;
+  width: 80%;
+}
+button {  
+  height: 50px;
+  font-size: large;
+  margin-right: 40px;
+  padding: 5px 20px;
+  border: 1px solid gray;
+  transition: 0.2s;
+  background-color: rgb(245, 243, 240);
+}
+button:hover {
+  cursor: pointer;
+  transform: scale(1.1, 1.1);
+  box-shadow: 5px 5px 10px rgb(114, 112, 112);
+  background-color: black;
+  color: white;
+  border-radius: 50px;
+}
+
+#mark {
+  margin-top: 15px;
+  height: 180px;
+  width: 230px;
+  float: right;
+}
+.question-container #mark img {
+  height: 150px;
+  width: 230px;
+}
+</style>
+<body>
+  <div class="title-container">
+    <h1>Multiple Choice Quiz</h1>
+  </div>
+  <div class="container">
+
+
+    <div class="question-container">
+      <div id="mark">
+        <img id="image">
+      </div>
+        <div class="question">
+          <p><strong>Question 1:</strong>What does HTML stand for?</p>
+        </div>
+        <div class="choices">
+          <button class="btn" id="btn1" onclick="button()" value="1">Hyper Text Markup Language</button>
+          <button class="btn" id="btn2" onclick="button2()">High-Level Text Management Language</button>
+          <button class="btn" id="btn3" onclick="button3()">Hyperlink and Text Markup Language</button>
+          <button class="btn" id="btn4" onclick="button4()">Home Tool Markup Language</button>
+        </div>
+        <p id="result"></p>
+    </div>
+
+    <div class="question-container">
+      <div id="mark">
+        <img id="image2">
+      </div>
+      <div class="question">
+        <p><strong>Question 2:</strong> Which tag is used to create a hyperlink in HTML?</p>
+      </div>
+      <div class="choices">
+        <button class="btn" id="btn5" onclick="button5()">link</button>
+        <button class="btn" id="btn6" onclick="button6()" value="1">a</button>
+        <button class="btn" id="btn7" onclick="button7()">url</button>
+        <button class="btn" id="btn8" onclick="button8()">hyperlink</button>
+      </div>
+      <p id="result2"></p>
+      
+    </div>
+ 
+
+    <div class="question-container">
+      <div id="mark">
+        <img id="image3">
+      </div>
+      <div class="question">
+        <p><strong>Question 3:</strong>How can you include external CSS in an HTML document?</p>
+      </div>
+      <div class="choices">
+        <button onclick="button9()">style tag</button>
+        <button onclick="button10()">css tag</button>
+        <button onclick="button11()">link rel="stylesheet" href="styles.css"</button>
+        <button onclick="button12()">external tag</button>
+      </div>
+      <p id="result3"></p>
+    </div>
+
+
+    <div class="question-container">
+      <div id="mark">
+        <img id="image4">
+      </div>
+      <div class="question">
+        <p><strong>Question 4:</strong>What does CSS stand for?</p>
+      </div>
+      <div class="choices">
+        <button onclick="button13()">Computer Style Sheets</button>
+        <button onclick="button14()">Creative Style Sheets</button>
+        <button onclick="button15()">Cascading Style Sheets</button>
+        <button onclick="button16()">Colorful Style Sheets</button>
+      </div>
+      <p id="result4"></p>
+    </div>
+
+
+    <div class="question-container">
+      <div id="mark">
+        <img id="image5">
+      </div>
+      <div class="question">
+        <p><strong>Question 5:</strong>Which keyword is used to declare a variable in JavaScript?</p>
+      </div>
+      <div class="choices">
+        <button onclick="button17()">var</button>
+        <button onclick="button18()">variable</button>
+        <button onclick="button19()">int</button>
+        <button onclick="button20()">declare</button>
+      </div>
+      <p id="result5"></p>
+    </div>
+
+
+    <div class="question-container">
+      <div id="mark">
+        <img id="image6">
+      </div>
+      <div class="question">
+        <p><strong>Question 6:</strong>What is the purpose of the "if" statement in JavaScript?</p>
+      </div>
+      <div class="choices">
+        <button onclick="button21()">Looping</button>
+        <button onclick="button22()">Function declaration</button>
+        <button onclick="button23()">Conditional execution</button>
+        <button onclick="button24()">Variable assignment</button>
+      </div>
+      <p id="result6"></p>
+    </div>
+
+
+    <div class="question-container">
+      <div id="mark">
+        <img id="image7">
+      </div>
+      <div class="question">
+        <p><strong>Question 7:</strong>How do you comment in JavaScript?</p>
+      </div>
+      <div class="choices">
+        <button onclick="button25()">// This is a comment</button>
+        <button onclick="button26()">/* This is a comment */</button>
+        <button onclick="button27()">-- This is a comment</button>
+        <button onclick="button28()"># This is a comment</button>
+      </div>
+      <p id="result7"></p>
+    </div>
+
+
+    <div class="question-container">
+      <div id="mark">
+        <img id="image8">
+      </div>
+      <div class="question">
+        <p><strong>Question 8:</strong>Which function is used to display a message box in JavaScript?</p>
+      </div>
+      <div class="choices">
+        <button onclick="button29()">alert()</button>
+        <button onclick="button30()">messageBox()</button>
+        <button onclick="button31()">display()</button>
+        <button onclick="button32()">showMessage()</button>
+      </div>
+      <p id="result8"></p>
+    </div>
+
+
+    <div class="question-container">
+      <div id="mark">
+        <img id="image9">
+      </div>
+      <div class="question">
+        <p><strong>Question 9:</strong>What is the purpose of the HTML <head> element?</p>
+      </div>
+      <div class="choices">
+        <button onclick="button33()">To define the main content of the document</button>
+        <button onclick="button34()">To provide metadata about the document</button>
+        <button onclick="button35()">To create a hyperlink</button>
+        <button onclick="button36()">To insert a line break</button>
+      </div>
+      <p id="result9"></p>
+    </div>
+
+
+    <div class="question-container">
+      <div id="mark">
+        <img id="image10">
+      </div>
+      <div class="question">
+        <p><strong>Question 10:</strong>In CSS, what does the acronym "CSS" represent?</p>
+      </div>
+      <div class="choices">
+        <button onclick="button37()">Computer Style Sheets</button>
+        <button onclick="button38()">Colorful Style Sheets</button>
+        <button onclick="button39()">Creative Style Sheets</button>
+        <button onclick="button40()">Cascading Style Sheets</button>
+      </div>
+      <p id="result10"></p>
+    </div> 
+
+    <a href=""><button onclick="submit()">SUBMIT</button></a>
+
+  </div>
+</body>
+
+
+<audio id="audio1">
+  <source src="audio/Correct Answer Sound Effect.mp3">
+</audio>
+<audio id="audio2">
+  <source src="audio/Wrong Answer Sound effect.mp3">
+</audio>
+<script>
+
+function submit() {
+  window.alert('Tang Ina mo')
+}
+</script>
+<script>
+    function button() {
+      document.getElementById('result').innerHTML = "Correct"
+      var locor = document.getElementById('result');
+      locor.style.color='green'
+      
+      var correct = document.getElementById('audio1');
+      correct.play();
+
+      document.getElementById('image').src='img/check.jpg'
+      
+      par.style.display = 'block'
+    }
+    function button2() {
+      document.getElementById('result').innerHTML = "Incorrect"
+      var locor = document.getElementById('result');
+      locor.style.color='red'
+
+      var incorrect = document.getElementById('audio2');
+      incorrect.play();
+
+      document.getElementById('image').src='img/x.jpg'
+
+      par.style.display = 'block'
+    }
+    function button3() {
+      document.getElementById('result').innerHTML = "Incorrect"
+      var locor = document.getElementById('result');
+      locor.style.color='red'
+
+      var incorrect = document.getElementById('audio2');
+      incorrect.play();
+
+      document.getElementById('image').src='img/x.jpg'
+
+      par.style.display = 'block'
+    }
+    function button4() {
+      document.getElementById('result').innerHTML = "Incorrect"
+      var locor = document.getElementById('result');
+      locor.style.color='red'
+
+      var incorrect = document.getElementById('audio2');
+      incorrect.play();
+
+      document.getElementById('image').src='img/x.jpg'
+
+      par.style.display = 'block'
+    }
+</script>
+
+<script>
+  function button5() {
+    document.getElementById('result2').innerHTML = "Incorrect"
+    var locor = document.getElementById('result2');
+    locor.style.color='red'
+
+    var incorrect = document.getElementById('audio2');
+      incorrect.play();
+
+      document.getElementById('image2').src='img/x.jpg'
+  }
+  function button6() {
+    document.getElementById('result2').innerHTML = "Correct"
+    var locor = document.getElementById('result2');
+    locor.style.color='green'
+
+    var correct = document.getElementById('audio1');
+      correct.play();
+
+      document.getElementById('image2').src='img/check.jpg'
+  }
+  function button7() {
+    document.getElementById('result2').innerHTML = "Incorrect"
+    var locor = document.getElementById('result2');
+    locor.style.color='red'
+
+    var incorrect = document.getElementById('audio2');
+      incorrect.play();
+
+      document.getElementById('image2').src='img/x.jpg'
+  }
+  function button8() {
+    document.getElementById('result2').innerHTML = "Incorrect"
+    var locor = document.getElementById('result2');
+    locor.style.color='red'
+
+    var incorrect = document.getElementById('audio2');
+      incorrect.play();
+
+      document.getElementById('image2').src='img/x.jpg'
+  }
+</script>
+
+<script>
+  function button9() {
+    document.getElementById('result3').innerHTML = "Incorrect"
+    var locor = document.getElementById('result3');
+    locor.style.color='red'
+
+    var incorrect = document.getElementById('audio2');
+      incorrect.play();
+
+      document.getElementById('image3').src='img/x.jpg'
+  }
+  function button10() {
+    document.getElementById('result3').innerHTML = "Incorrect"
+    var locor = document.getElementById('result3');
+    locor.style.color='red'
+
+    var incorrect = document.getElementById('audio2');
+      incorrect.play();
+
+      document.getElementById('image3').src='img/x.jpg'
+  }
+  function button11() {
+    document.getElementById('result3').innerHTML = "Correct"
+    var locor = document.getElementById('result3');
+    locor.style.color='green'
+
+    var correct = document.getElementById('audio1');
+      correct.play();
+
+      document.getElementById('image3').src='img/check.jpg'
+  }
+  function button12() {
+    document.getElementById('result3').innerHTML = "Incorrect"
+    var locor = document.getElementById('result3');
+    locor.style.color='red'
+
+    var incorrect = document.getElementById('audio2');
+      incorrect.play();
+
+      document.getElementById('image3').src='img/x.jpg'
+  }
+</script>
+
+<script>
+  function button13() {
+    document.getElementById('result4').innerHTML = "Incorrect"
+    var locor = document.getElementById('result4');
+    locor.style.color='red'
+
+    var incorrect = document.getElementById('audio2');
+      incorrect.play();
+
+      document.getElementById('image4').src='img/x.jpg'
+  }
+  function button14() {
+    document.getElementById('result4').innerHTML = "Incorrect"
+    var locor = document.getElementById('result4');
+    locor.style.color='red'
+
+    var incorrect = document.getElementById('audio2');
+      incorrect.play();
+
+      document.getElementById('image4').src='img/x.jpg'
+  }
+  function button15() {
+    document.getElementById('result4').innerHTML = "Correct"
+    var locor = document.getElementById('result4');
+    locor.style.color='green'
+
+    var correct = document.getElementById('audio1');
+      correct.play();
+
+      document.getElementById('image4').src='img/check.jpg'
+  }
+  function button16() {
+    document.getElementById('result4').innerHTML = "Incorrect"
+    var locor = document.getElementById('result4');
+    locor.style.color='red'
+
+    var incorrect = document.getElementById('audio2');
+      incorrect.play();
+
+      document.getElementById('image4').src='img/x.jpg'
+  }
+</script>
+
+<script>
+  function button17() {
+    document.getElementById('result5').innerHTML = "Correct"
+    var locor = document.getElementById('result5');
+    locor.style.color='green'
+
+    var correct = document.getElementById('audio1');
+      correct.play();
+
+      document.getElementById('image5').src='img/check.jpg'
+  }
+  function button18() {
+    document.getElementById('result5').innerHTML = "Incorrect"
+    var locor = document.getElementById('result5');
+    locor.style.color='red'
+
+    var incorrect = document.getElementById('audio2');
+      incorrect.play();
+
+      document.getElementById('image5').src='img/x.jpg'
+  }
+  function button19() {
+    document.getElementById('result5').innerHTML = "Incorrect"
+    var locor = document.getElementById('result5');
+    locor.style.color='red'
+
+    var incorrect = document.getElementById('audio2');
+      incorrect.play();
+
+      document.getElementById('image5').src='img/x.jpg'
+  }
+  function button20() {
+    document.getElementById('result5').innerHTML = "Incorrect"
+    var locor = document.getElementById('result5');
+    locor.style.color='red'
+
+    var incorrect = document.getElementById('audio2');
+      incorrect.play();
+
+      document.getElementById('image5').src='img/x.jpg'
+  }
+</script>
+
+<script>
+  function button21() {
+    document.getElementById('result6').innerHTML = "Incorrect"
+    var locor = document.getElementById('result6');
+    locor.style.color='red'
+
+    var incorrect = document.getElementById('audio2');
+      incorrect.play();
+
+      document.getElementById('image6').src='img/x.jpg'
+  }
+  function button22() {
+    document.getElementById('result6').innerHTML = "Incorrect"
+    var locor = document.getElementById('result6');
+    locor.style.color='red'
+
+    var incorrect = document.getElementById('audio2');
+      incorrect.play();
+
+      document.getElementById('image6').src='img/x.jpg'
+  }
+  function button23() {
+    document.getElementById('result6').innerHTML = "Correct"
+    var locor = document.getElementById('result6');
+    locor.style.color='green'
+
+    var correct = document.getElementById('audio1');
+      correct.play();
+
+      document.getElementById('image6').src='img/check.jpg'
+  }
+  function button24() {
+    document.getElementById('result6').innerHTML = "Incorrect"
+    var locor = document.getElementById('result6');
+    locor.style.color='red'
+
+    var incorrect = document.getElementById('audio2');
+      incorrect.play();
+
+      document.getElementById('image6').src='img/x.jpg'
+  }
+</script>
+
+<script>
+  function button25() {
+    document.getElementById('result7').innerHTML = "Correct"
+    var locor = document.getElementById('result7');
+    locor.style.color='green'
+
+    var correct = document.getElementById('audio1');
+      correct.play();
+
+      document.getElementById('image7').src='img/check.jpg' 
+  }
+  function button26() {
+    document.getElementById('result7').innerHTML = "Incorrect"
+    var locor = document.getElementById('result7');
+    locor.style.color='red'
+
+    var incorrect = document.getElementById('audio2');
+      incorrect.play();
+
+      document.getElementById('image7').src='img/x.jpg'
+  }
+  function button27() {
+    document.getElementById('result7').innerHTML = "Incorrect"
+    var locor = document.getElementById('result7');
+    locor.style.color='red'
+
+    var incorrect = document.getElementById('audio2');
+      incorrect.play();
+
+      document.getElementById('image7').src='img/x.jpg'
+  }
+  function button28() {
+    document.getElementById('result7').innerHTML = "Incorrect"
+    var locor = document.getElementById('result7');
+    locor.style.color='red'
+
+    var incorrect = document.getElementById('audio2');
+      incorrect.play();
+
+      document.getElementById('image7').src='img/x.jpg'
+  }
+</script>
+
+<script>
+  function button29() {
+    document.getElementById('result8').innerHTML = "Correct"
+    var locor = document.getElementById('result8');
+    locor.style.color='green'
+
+    var correct = document.getElementById('audio1');
+      correct.play();
+
+      document.getElementById('image8').src='img/check.jpg'
+  }
+  function button30() {
+    document.getElementById('result8').innerHTML = "Incorrect"
+    var locor = document.getElementById('result8');
+    locor.style.color='red'
+
+    var incorrect = document.getElementById('audio2');
+      incorrect.play();
+
+      document.getElementById('image8').src='img/x.jpg'
+  }
+  function button31() {
+    document.getElementById('result8').innerHTML = "Incorrect"
+    var locor = document.getElementById('result8');
+    locor.style.color='red'
+
+    var incorrect = document.getElementById('audio2');
+      incorrect.play();
+
+      document.getElementById('image8').src='img/x.jpg'
+  }
+  function button32() {
+    document.getElementById('result8').innerHTML = "Incorrect"
+    var locor = document.getElementById('result8');
+    locor.style.color='red'
+
+    var incorrect = document.getElementById('audio2');
+      incorrect.play();
+
+      document.getElementById('image8').src='img/x.jpg'
+  }
+</script>
+
+<script>
+  function button33() {
+    document.getElementById('result9').innerHTML = "Incorrect"
+    var locor = document.getElementById('result9');
+    locor.style.color='red'
+
+    var incorrect = document.getElementById('audio2');
+      incorrect.play();
+
+      document.getElementById('image9').src='img/x.jpg'
+  }
+  function button34() {
+    document.getElementById('result9').innerHTML = "Correct"
+    var locor = document.getElementById('result9');
+    locor.style.color='green'
+
+    var correct = document.getElementById('audio1');
+      correct.play();
+
+      document.getElementById('image9').src='img/check.jpg'
+  }
+  function button35() {
+    document.getElementById('result9').innerHTML = "Incorrect"
+    var locor = document.getElementById('result9');
+    locor.style.color='red'
+
+    var incorrect = document.getElementById('audio2');
+      incorrect.play();
+
+      document.getElementById('image9').src='img/x.jpg'
+  }
+  function button36() {
+    document.getElementById('result9').innerHTML = "Incorrect"
+    var locor = document.getElementById('result9');
+    locor.style.color='red'
+
+    var incorrect = document.getElementById('audio2');
+      incorrect.play();
+
+      document.getElementById('image9').src='img/x.jpg'
+  }
+</script>
+
+<script>
+  function button37() {
+    document.getElementById('result10').innerHTML = "Incorrect"
+    var locor = document.getElementById('result10');
+    locor.style.color='red'
+
+    var incorrect = document.getElementById('audio2');
+      incorrect.play();
+
+      document.getElementById('image10').src='img/x.jpg'
+  }
+  function button38() {
+    document.getElementById('result10').innerHTML = "Incorrect"
+    var locor = document.getElementById('result10');
+    locor.style.color='red'
+
+    var incorrect = document.getElementById('audio2');
+      incorrect.play();
+
+      document.getElementById('image10').src='img/x.jpg'
+  }
+  function button39() {
+    document.getElementById('result10').innerHTML = "Incorrect"
+    var locor = document.getElementById('result10');
+    locor.style.color='red'
+
+    var incorrect = document.getElementById('audio2');
+      incorrect.play();
+
+      document.getElementById('image10').src='img/x.jpg'
+  }
+  function button40() {
+    document.getElementById('result10').innerHTML = "Correct"
+    var locor = document.getElementById('result10');
+    locor.style.color='green'
+
+    var correct = document.getElementById('audio1');
+      correct.play();
+
+      document.getElementById('image10').src='img/check.jpg'
+  }
+</script>
+</html>

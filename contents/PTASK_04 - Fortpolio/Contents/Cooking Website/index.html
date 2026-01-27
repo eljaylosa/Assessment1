@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="icon" type="image/x-icon" href="img/webtabicon.png">
+  <script src="https://kit.fontawesome.com/57a739b7d7.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="soundfx-when-click.js">
+  <ion-icon name="chevron-up-outline"></ion-icon>
+  
+</head> 
+
+<script>
+  function soundfx() {
+  var sound = document.getElementById("audio");
+  sound.play();
+}
+</script>
+
+
+<body>
+  <audio id="audio">
+    <source src="audio/quack.mp3">
+  </audio>
+  <main onclick="soundfx()">
+ 
+    <nav class="nav_links_page">
+      <a href="index.html" class="title"><img src="img/New Logo Website.png" alt="" height="180px" width="180px" ></a>
+      <div class="nav_links"> 
+        <ul>
+          <li><a  class="a" style="background-color: #F9EFDB;" href="index.html">Home</a></li>
+        
+          <li><a  class="a" href="recipes2.html">Menu</a></li> 
+          
+          <li><a  class="a" href="about.html">About Us</a></li>
+         
+          <li><a  class="git" href="contact.html">Get In Touch</a></li> 
+
+          <li><a class="get" href="../../portfolio.html">Log Out</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="main_page">
+        <div class="main_page_title">
+          <p><strong>Creating Food</strong><i>with love</i></p>
+        </div>
+        
+          <div class="search_bar">
+            <img class="img_search" src="img/search_FILL0_wght400_GRAD0_opsz24.png" alt="Search">
+            <input class="input" type="text" id="searchInput" name="query" placeholder="Search..." >
+            <button onclick="soundfx()" class="search_bar_btn" type="submit">Search</button>
+          </div>
+    </div>
+    
+    <div class="recipe_page">
+      <div class="recipe_page_border">
+        <div class="recipe_page_title">
+          <p style="font-size: x-large;"><Strong>My Latest recipes</Strong></p>
+        </div>
+        <div class="see_more">
+          <div class="see_more_href">
+            <p><a href="recipes2.html">See more</a></p>
+          </div>
+        </div>
+        <div class="recipe_img">
+          <div class="recipe_img_1">
+            <a id="img1" href="prepare-recipes/recipe-order-main-page/main-page-recipe-1.html"><img src="img/menu-img/Adobong Manok.jpg" alt="Adobong Manok"></a>
+
+            <div class="menu_description">
+              <p class="des">Adobong Manok</p>
+              <p style="color: gray;">₱90</p>
+              <a href="prepare-recipes/recipe-order-main-page/main-page-recipe-1.html"><button class="order_btn">Order Now</button></a>
+            </div>      
+
+          </div>
+          <div class="recipe_img_2">
+            <a id="img2" href="prepare-recipes/recipe-order-main-page/main-page-recipe-2.html"><img src="img/menu-img/Sinigang na Baboy.jpg" alt="Sinigang na Baboy"></a>
+
+            <div class="menu_description">
+              <p class="des">Sinigang na Baboy</p>
+              <p style="color: gray;">₱120</p>
+              <a href="prepare-recipes/recipe-order-main-page/main-page-recipe-2.html"><button class="order_btn">Order Now</button></a>
+            </div> 
+
+          </div>
+          <div class="recipe_img_3">
+            <a id="img3" href="prepare-recipes/recipe-order-main-page/main-page-recipe-3.html"><img src="img/menu-img/Kaldereta.jpg" alt="Kaldereta"></a>
+
+            <div class="menu_description">
+              <p class="des">Kaldereta</p>
+              <p style="color: gray;">₱90</p>
+              <a href="prepare-recipes/recipe-order-main-page/main-page-recipe-3.html"><button class="order_btn">Order Now</button></a>
+            </div>   
+
+          </div>
+        </div>
+      </div> 
+    </div>
+ 
+      <div class="comments_page">
+        <div class="comments_page_title">
+          <p style="background-color: bisque; padding: 15px; width: 180px; text-align: center; margin: 0;"><strong>ADD A COMMENT</strong></p>
+          <div class="comment-input">
+              <input class="comment-textarea" type="text" cols="170" rows="5" id="new-comment" placeholder="Add a public comment...">
+              <button class="comments-btn" onclick="addComment()">Share Your Comment</button>    
+          </div>           
+        </div>
+    </div>
+    
+    <div class="customer-comments">
+      <h1>COMMENTS FROM CUSTOMER</h1>
+      <div id="comments-list"></div>
+    </div>
+    
+    <script>
+      function addComment() {
+        var commentText = document.getElementById('new-comment').value;
+        if (commentText.trim() === '') {
+          alert('Please enter a comment.');
+          return;
+        }
+    
+        var commentDiv = document.createElement('div');
+        commentDiv.classList.add('comment');
+        commentDiv.innerText = commentText;
+    
+        document.getElementById('comments-list').appendChild(commentDiv);
+        document.getElementById('new-comment').value = '';
+      }
+    </script>
+    
+
+
+    
+    <div class="delivery_page">
+      <div class="delivery_title">
+        <p style="font-size: x-large;"><b>WHERE WE DELIVER</b></p>
+      </div>
+      <div class="iframe_video">
+        <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.7360674014362!2d120.5855898743182!3d14.557079985924165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33963c570746381f%3A0x9f108b4906201b1d!2sLimay%20National%20High%20School!5e0!3m2!1sen!2sph!4v1701206039791!5m2!1sen!2sph" width="100%" height="500px" style="border: 1px solid black;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>   
+      </div>
+    </div>
+
+    <footer>
+      <div class="logo">
+        <a href="index.html"><img src="img/New Logo Website.png" alt="Logo Image" height="150px" width="150px"></a>
+      </div>
+      <div class="links">
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="tos.html">Terms of Service</a></li>
+        </ul>
+      </div>
+      <div class="social-links">
+        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i>|</a>
+       
+        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i>|</a>
+        
+        <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i>|</a>
+        
+        <a href="https://www.tiktok.com/"><i class="fa-brands fa-tiktok"></i></a>
+ </div>
+ <div class="arr">
+  <span>All Rights Reserved 2024</span>
+ </div>
+    </footer>
+
+
+    <style>
+      .arr span {
+        color: gray;
+      }
+      .arr {
+        color: black;
+        justify-content: center;
+        text-align: center;
+      }
+      .social-links p {
+        font-size: 15px;
+      }
+      .social-links a i {
+        color: black;
+        font-size: 50px;
+        margin: 0 20px;
+        
+      }
+      .social-links a i:hover {
+        transition: .3s;
+        transform: scale(1.5, 1.5);
+      }
+      .social-links a {
+        font-weight: lighter;
+        color: black;
+        text-decoration: none;
+        font-size: 50px;
+      }
+      .social-links {
+        margin-bottom: 10px;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        
+      }
+      footer {
+        padding-top: 2%;
+      }
+      .logo {
+        display: flex;
+        justify-content: center;
+      }
+      .links {
+        padding: 1%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+      }
+      .links li a {
+        text-decoration: none;
+        color: black;
+        margin: 2px 13px;
+      }
+      .links ul {
+        display: flex;
+        list-style-type: none;
+      }
+      .links li a:hover {
+        text-decoration: underline;
+      }
+    </style>
+    <button onclick="topFunction()" id="btn" title="Go to top"><img src="img/chevron-up-outline.svg" alt="" width="40px" height="30px"></button>
+
+    <script>						
+      let mybutton = document.getElementById("btn");
+      
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+      </script>
+
+
+
+  </main>
+</body>
+</html>

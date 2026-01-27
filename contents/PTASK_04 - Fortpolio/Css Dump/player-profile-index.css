@@ -1,0 +1,269 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-image: url(img/bg-img.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Philosopher', Poppins;
+}
+/* This Section is for the Nav Bar*/
+.nav-bar-container {
+  font-size: medium;
+  display: flex;
+  padding: 10px;
+  height: 100px;
+  width: 100%;
+  background: transparent;
+  transition: .5s;
+  backdrop-filter: blur(15px);
+  justify-content: center;
+}
+.nav-bar-container:hover {
+  box-shadow: 0px 5px gray;
+}
+.nav-bar {
+  display: flex;
+  align-items: center;
+}
+.nav-bar .logo {
+  margin-right: 800px;
+}
+.nav-links {
+  display: flex;
+}
+.nav-links ul {
+  display: flex;
+  list-style-type: none;
+}
+.nav-links ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  margin: 10px 20px;
+}
+
+/* This Section is For the Main Container */
+section {
+  margin-top: 3%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  
+}
+.main-container {
+  background-color: #e4d8c1;
+  padding: 30px;
+  display: flex;
+  height: 640px;
+  width: 50%;
+  border-radius: 20px;
+  position: relative;
+  animation-name: main-anim;
+  animation-duration: 1.25s;
+}
+
+@keyframes main-anim {
+  from 
+  {
+    top: 100px;
+  }
+  to 
+  {
+    top: 0px;
+  }
+}
+.main-container .player-info {
+  width: 400px;
+  background-color: #f0ebe3;
+  border-radius: 30px 30px 0px 0px;
+}
+.main-container .player-info .background-pic {
+  text-align: center;
+  background-image: url(img/bg-img.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px 30px 0px 0px;
+  height: 150px;
+  z-index: -1;
+}
+.main-container .player-info .profile-pic a img {
+  border-radius: 100px;
+  margin-top: 50px;
+}
+.description {
+  padding: 15px;
+  margin-top: 50px;
+}
+.description .profile-name {
+  text-align: center;
+  margin-bottom: 25px;
+  margin-top: 30px;
+  font-size: large;
+}
+
+.description .profile-name a {
+  text-decoration: none;
+  color: #4b576c;
+}
+
+.description .strand {
+  background-color: #a7b982;
+  padding: 10px;
+  color: #ffffff;
+}
+.description .subject {
+  background-color: #cdbba5;
+  padding: 10px;
+  color: #ffffff;
+}
+.description .des {
+  margin: 10px ;
+}
+.description .des .span1 {
+  margin-left: 160px;
+}
+.description .des .span2 {
+  margin-left: 50px;
+}
+.signature {
+  height: 150px;
+  padding: 10px;
+  border: 1px solid rgb(185, 185, 185);
+  
+}
+
+/*This Section is for the Main Page*/
+
+.projects-info {
+  background-color: #f0ebe3;
+  margin-left: 30px;
+  width: 52%;
+  padding: 20px;
+}
+.projects-info .info-title {
+  text-align: center;
+  color: #4b5568;
+}
+.projects-info .achievements {
+  height: 160px;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+}
+.projects-info .achievements .total-value {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e2d3b6;
+  height: 100px;
+  margin: 0px 10px;
+  margin-top: 40px;
+  border-radius: 20px;
+  padding: 10px;
+}
+.projects-info .achievements .total-value .value-text {
+  margin-left: 25px;
+}
+
+.icons i {
+  font-size: 40px;
+}
+.project-showcase .projects {
+  border: 2px solid #e9e2d8;
+  background-color: #f0ebe3;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+    padding: 10px;
+     height: 280px;
+    width: 100%;
+}
+.project-showcase .showcase-title h1{
+  margin-bottom: 15px;
+  color: #84603d;
+}
+.project-showcase .projects .row .box {
+  margin: 15px 15px;
+  height: 110px;
+  width: 100px;
+  background-color: #c38743;
+  transition: 0.3s;
+}
+.project-showcase .projects .row .box:hover {
+  cursor: pointer;
+  transform: scale(1.1, 1.2);
+  opacity: 1;
+}
+
+.see-more-projects {
+  display: flex;
+  justify-content: center; 
+}
+.see-more-projects button {
+  margin-top: 15px;
+  padding: 5px;
+  border: none;
+  background: transparent;
+  transition: 0.3s;
+}
+.see-more-projects button:hover {
+  cursor: pointer;
+  border-bottom: 1px  #c38743 solid;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.back-to-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.back-to-home button {
+  padding: 20px;
+  font-size: large;
+  color: rgb(255, 255, 255);
+  background: transparent;
+  border: none;
+  transition: 0.3s;
+}
+.back-to-home button:hover {
+  cursor: pointer;
+  backdrop-filter: blur(5px);
+  color: white;
+  box-shadow: inset -10px -10px 10px rgb(39, 39, 39);
+  border-radius: 50px;
+}

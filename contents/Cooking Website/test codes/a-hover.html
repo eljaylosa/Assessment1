@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      text-align: center;
+    }
+    a {
+      position: relative;
+      text-decoration: none;
+      font-size: xx-large;
+      color: black;
+    }
+    a:before {
+      content: "";
+      position: absolute;
+      bottom: -2px;
+      height: 6px;
+      width: 0;
+      background-color: blue;
+      border-radius: 50px;
+      transition: width 0.3s ease;
+    }
+    a:hover::before {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+
+    <a href="#">Home</a>
+
+
+</body>
+</html>

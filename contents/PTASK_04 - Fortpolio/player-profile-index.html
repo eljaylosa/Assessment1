@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="player-profile-index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/57a739b7d7.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Player Profile</title>
+  <link rel="icon" type="image/x-icon" href="img/Website Icon Logo.png">
+  
+</head>
+<style>
+  
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-image: url(img/bg-img.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Philosopher', Poppins;
+}
+/* This Section is for the Nav Bar*/
+.nav-bar-container {
+  font-size: medium;
+  display: flex;
+  padding: 10px;
+  height: 100px;
+  width: 100%;
+  background: transparent;
+  transition: .5s;
+  backdrop-filter: blur(15px);
+  justify-content: center;
+}
+.nav-bar-container:hover {
+  box-shadow: 0px 5px gray;
+}
+.nav-bar {
+  display: flex;
+  align-items: center;
+}
+.nav-bar .logo {
+  margin-right: 800px;
+}
+.nav-links {
+  display: flex;
+}
+.nav-links ul {
+  display: flex;
+  list-style-type: none;
+}
+.nav-links ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  margin: 10px 20px;
+}
+
+/* This Section is For the Main Container */
+section {
+  margin-top: 3%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.main-container {
+  background-color: #e4d8c1;
+  padding: 30px;
+  display: flex;
+  height: 650px;
+  width: 970px;
+  border-radius: 20px;
+  position: relative;
+  animation-name: main-anim;
+  animation-duration: 1.25s;
+}
+
+@keyframes main-anim {
+  from 
+  {
+    top: 100px;
+  }
+  to 
+  {
+    top: 0px;
+  }
+}
+.main-container .player-info {
+  width: 400px;
+  background-color: #f0ebe3;
+  border-radius: 30px 30px 0px 0px;
+}
+.main-container .player-info .background-pic {
+  text-align: center;
+  background-image: url(img/bg-img.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px 30px 0px 0px;
+  height: 150px;
+  z-index: -1;
+}
+.main-container .player-info .profile-pic a img {
+  border-radius: 100px;
+  margin-top: 50px;
+}
+.description {
+  padding: 15px;
+  margin-top: 50px;
+}
+.description .profile-name {
+  text-align: center;
+  margin-bottom: 25px;
+  margin-top: 30px;
+  font-size: large;
+}
+
+.description .profile-name a {
+  text-decoration: none;
+  color: #4b576c;
+}
+
+.description .strand {
+  background-color: #a7b982;
+  padding: 10px;
+  color: #ffffff;
+}
+.description .subject {
+  background-color: #cdbba5;
+  padding: 10px;
+  color: #ffffff;
+}
+.description .des {
+  margin: 10px ;
+}
+.description .des .span1 {
+  margin-left: 160px;
+}
+.description .des .span2 {
+  margin-left: 50px;
+}
+.signature {
+  height: 150px;
+  padding: 10px;
+  border: 1px solid rgb(185, 185, 185);
+  
+}
+
+/*This Section is for the Main Page*/
+
+.projects-info {
+  background-color: #f0ebe3;
+  margin-left: 30px;
+  width: 52%;
+  padding: 20px;
+}
+.projects-info .info-title {
+  text-align: center;
+  color: #4b5568;
+}
+.projects-info .achievements {
+  height: 160px;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+}
+.projects-info .achievements .total-value {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e2d3b6;
+  height: 100px;
+  margin: 0px 10px;
+  margin-top: 40px;
+  border-radius: 20px;
+  padding: 10px;
+}
+.projects-info .achievements .total-value .value-text {
+  margin-left: 25px;
+}
+
+.icons i {
+  font-size: 40px;
+}
+.project-showcase .projects {
+  border: 2px solid #e9e2d8;
+  background-color: #f0ebe3;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+    
+     height: 300px;
+    width: 100%;
+}
+.project-showcase .showcase-title h1{
+  margin-bottom: 15px;
+  color: #84603d;
+}
+.project-showcase .projects .row .box {
+  text-align: center;
+  border: 1px solid #e2d3b6;
+  border-radius: 5px;
+  margin: 30px 15px;
+  height: 110px;
+  width: 100px;
+  background-color: #c38743;
+  transition: 0.3s;
+}
+.project-showcase .projects .row .box a img {
+  height: 100px;
+  width: 100px;
+  padding: 5px 5px;
+  border-radius: 5px 5px 30px 5px;
+}
+.project-showcase .projects .row .box p {
+  text-align: center;
+  background-color: #e9e5dc ;
+}
+.project-showcase .projects .row .box:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.see-more-projects {
+  display: flex;
+  justify-content: center; 
+}
+.see-more-projects button {
+  margin-top: 7.5px;
+  padding: 5px;
+  border: none;
+  background: transparent;
+  transition: 0.3s;
+}
+.see-more-projects button:hover {
+  cursor: pointer;
+  border-bottom: 1px  #c38743 solid;
+}
+
+
+.back-to-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.back-to-home button {
+  padding: 20px;
+  font-size: large;
+  color: rgb(255, 255, 255);
+  background: transparent;
+  border: none;
+  transition: 0.3s;
+}
+.back-to-home button:hover {
+  cursor: pointer;
+  backdrop-filter: blur(5px);
+  color: white;
+  box-shadow: inset -10px -10px 10px rgb(39, 39, 39);
+  border-radius: 50px;
+}
+
+</style>
+<body>
+  <main>
+    <div class="nav-bar-container">
+      <nav class="nav-bar">
+        <div class="logo">
+          <a href="main-index.html"><img src="img/Website-Logo.png" alt="logo" height=75px"></a>
+        </div>
+         
+        <div class="nav-links">
+          <ul>
+            <li><a href="main-index.html">HOME</a></li>
+            <li><a href="resume.html">ABOUT ME</a></li>
+            <li><a href="portfolio.html">PORTFOLIO</a></li>
+            <li><a href="contact.html">CONTACT ME</a></li>
+            <li><a href="Log in/LogIn-UI.html">LOG OUT</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    
+    <section>
+      
+        <div class="main-container">
+          <div class="player-info">
+            <div class="background-pic">
+              <div class="profile-pic">
+                <a href="resume.html"><img src="img/player.jpg" alt="Player's Profile"></a>
+              </div>
+            </div>
+            <div class="description">
+              <div class="profile-name">
+                <a href="https://www.facebook.com/ljlosa.69/" target="_blank"><h1>Eljay Losa</h1></a>
+              </div>
+              <div class="strand des">
+                <h2>Strand <span class="span1">ICT 12-A</span></h2>
+              </div>
+              <div class="subject des">
+                <h2>Subject<span class="span2">.NET Programming</span></h2>
+              </div>
+              <div class="signature">
+                <p>I will always remember my time at this school, where I made a lot of friends and had wonderful teachers. 
+                  They taught me so much, 
+                  and I will always remember what I learnt from them. 
+                  Until the day I die, I will cherish every moment we shared. </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects-info">
+              <div class="info-title">
+                <h1>Main Page</h1>
+              </div>
+
+              <div class="achievements">
+                <div class="total-value">
+                  <div class="icons">
+                    <i class="fa-solid fa-trophy"></i>
+                  </div>
+                  <div class="value-text">
+                    <h4>Total achievements</h4>
+                    <p>3 out of 6</p>
+                  </div>
+                </div>
+
+                <div class="total-value">
+                  <div class="icons">
+                    <i class="fa-solid fa-trophy"></i>
+                  </div>
+                  <div class="value-text">
+                    <h4>Total achievements</h4>
+                    <p>6</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="project-showcase">
+                <div class="showcase-title">
+                  <h1>Project Showcase</h1>
+                </div>
+                <div class="projects">
+                  <div class="row">
+                    <div class="box">
+                      <a href="Contents/Four Basic Operations/four-basic-operations.html"><img src="img/projects-img/calculator.jpg" alt=""></a>
+                        <p>Calculator</p>      
+                    </div>
+                    <div class="box">
+                      <a href="Contents/Four Basic Operations/four-basic-operations.html"><img src="img/projects-img/calculator.jpg" alt=""></a>
+                        <p>Calculator</p>
+                    </div>
+                  </div>
+                  
+                  <div class="row">
+                    <div class="box">
+                      <a href="Contents/Four Basic Operations/four-basic-operations.html"><img src="img/projects-img/calculator.jpg" alt=""></a>
+                        <p>Calculator</p>
+                    </div>
+                    <div class="box">
+                      <a href="Contents/Four Basic Operations/four-basic-operations.html"><img src="img/projects-img/calculator.jpg" alt=""></a>
+                        <p>Calculator</p>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="box">
+                      <a href="Contents/Four Basic Operations/four-basic-operations.html"><img src="img/projects-img/calculator.jpg" alt=""></a>
+                        <p>Calculator</p>
+                    </div>
+                    <div class="box">
+                      <a href="Contents/Four Basic Operations/four-basic-operations.html"><img src="img/projects-img/calculator.jpg" alt=""></a>
+                        <p>Calculator</p>
+                    </div>
+                  </div>
+                 
+                </div>
+                <div class="see-more-projects">
+                  <a href="portfolio.html"><button>Show More</button></a>
+                </div>
+              </div>
+          </div>  
+      </div>
+      
+      
+    </section>
+    <div class="back-to-home">
+      <a href="main-index.html"><button>BACK TO HOME</button></a>
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/57a739b7d7.js" crossorigin="anonymous"></script>
+    <title>Log In</title>
+    <link rel="icon" type="image/x-icon" href="../img/Website Icon Logo.png">    
+    <link rel="stylesheet" href="LogIn-UI.css">
+   
+</head>
+<style>
+    * {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+body {
+  background-color: rgb(235, 235, 235);
+  background-image: url(../Contents-LandingPage/img/Backgound\ image\ \(yellow\).jpg);
+}
+.main-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10%;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; 
+}
+.form-container {
+  padding: 70px;
+  justify-content: center;
+  align-items: center;
+   width: 900px;
+   height: 380px;
+   background-color: rgb(255, 255, 255);
+   box-shadow: 10px 10px 20px rgb(0, 0, 0);
+   border-radius: 150px 0px 0px 150px;
+   margin-left: 230px;
+   animation-name: form-ani;
+   animation-duration: 0.5s; 
+   position: relative;
+   background: transparent;
+   backdrop-filter: blur(10px);
+}
+
+@keyframes form-ani {
+  0%   {left:100%;}
+  100%  {left:0px;}
+}
+
+.form-container .buttons {
+  text-align: center;
+}
+.form-container .email {
+  margin-bottom: 20px;
+}
+.form-container p {
+  margin-bottom: 10px;
+}
+p {
+  font-size: x-large;
+}
+button {
+  font-size: xx-large;
+  width: 350px;
+  cursor: pointer;
+  transition: 0.1s;
+
+}
+button:hover {
+  opacity: 0.8;
+}
+input {
+  height: 50px;
+  width: 400px;
+  font-size: x-large;
+  border-radius: 10px;
+}
+.buttons {
+  margin-top: 20px;        
+}
+.buttons button {
+  padding: 5px;
+  font-weight: bold;
+  background-color: rgb(31, 29, 182);
+  color: aliceblue;
+  margin-right: 480px;
+}
+.signup-container a button {
+  padding: 5px;
+  border: none;
+  color: aliceblue;
+  background-color: green;
+}
+.dhaa {
+  margin: 20px;
+}
+h1 {
+  font-size: 100px;
+  color: rgb(31, 29, 182);
+  font-weight: 1000;
+  animation-name: h1-anim;
+  animation-duration: 0.5s;
+  position: relative;
+}
+@keyframes h1-anim {
+  0%   {left:100%;}
+  100%  {left:0px;}
+}
+h2 {
+  font-size: 50px;
+  animation-name: h2-anim;
+  animation-duration: 0.6s;
+  position: relative;
+}
+@keyframes h2-anim {
+  0%   {top: 100%;;}
+  100%  {top: 0px;}
+}
+h2 span {
+ color: black;
+}
+.main-title {
+  margin-top: 70px;
+  margin-left: 50px;
+}
+.signup-container {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-right: 480px;
+}
+.signup-container .dhaa {
+  color: rgb(29, 46, 194);
+}
+form div {
+  margin: 5px;
+}
+.input-box input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-weight: bolder;
+}
+.input-box {
+  border-bottom: 2px solid black;
+  width: 400px;
+}
+
+.pass {
+  display: flex;
+  align-items: center;
+} 
+
+.pass i {
+  font-size: 30px;
+  transition: 0.3s;
+}
+.pass i:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+</style>
+<body>
+    <div class="main-container">
+        <div class="main-title">
+            <h1>Eljay Losa's</h1>
+            <h2>Simple <span>Login/Sign Up UI</span></h2>
+        </div>
+        <div class="container">
+            <div class="form-container">            
+                <form action="">
+                    <div class="email input-box">
+                        <p>Username: </p>
+                        <input type="text" maxlength="50" required id="inp">
+                        
+                    </div>
+                    <div class="input-box">
+                        <p>Password: </p>
+                        <div class="pass">
+                        <input type="password" maxlength="15" required id="inp2"><i class="fa-solid fa-eye" id="eye-icon"></i>
+                        </div>
+                    </div>
+                <div class="buttons">
+                    <button onclick="login()">Log In</button>
+                </div>
+                </form>
+                <div class="signup-container"> 
+                    <p class="dhaa">Don't have an account?</p>
+                    <a href="Signup-UI.html"><button>Sign up</button></a>
+                </div>
+            </div>  
+        </div>
+    </div>
+
+    <script src="LogIn-UI.js"></script>
+
+</body>
+</html> 

@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Philosopher', Poppins;
+}
+
+/* This Section is for the Nav Bar*/
+.nav-bar-container {
+  font-size: medium;
+  display: flex;
+  padding: 10px;
+  height: 100px;
+  width: 100%;
+  background: transparent;
+  transition: .5s;
+  backdrop-filter: blur(15px);
+  justify-content: center;
+  overflow: hidden;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + section {
+  padding-top: 120px;
+}
+.nav-bar-container:hover {
+  box-shadow: 0px 5px gray;
+}
+.nav-bar {
+  display: flex;
+  align-items: center;
+}
+.nav-bar .logo {
+  margin-right: 800px;
+}
+.nav-links {
+  display: flex;
+}
+.nav-links ul {
+  display: flex;
+  list-style-type: none;
+}
+.nav-links ul li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  margin: 10px 20px;
+}
+
+/* this section is for the main content*/
+section {
+  padding-top: 50px;
+}
+
+.title {
+  text-align: center;
+}
+
+.title h1 {
+  font-size: 40px ;
+}
+
+.main-container {
+  display: flex;
+  width: 100%;
+  margin-top: 50px;
+  padding: 40px;
+ 
+}
+.profile-border {
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  width: 500px;
+  border: 20px solid black;
+  align-items: center;
+}
+.profile-img img {
+  border-radius: 50%;
+  border: 15px solid black;
+}
+.img-container {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  margin-left: 250px;
+  
+}
+
+
+
+.my-info-container .my-name h1{
+  font-size: 40px;
+  font-weight: bold;
+  
+}
+.my-info-container .my-name {
+  padding: 5px 0px;
+}
+.my-info-container .profession h2 {
+  font-size: 25px;
+}
+.my-info-container .profession {
+  padding: 5px 0px;
+}
+.my-info-container .paragraph p {
+  font-size: 20px;
+}
+.my-info-container .paragraph {
+  padding: 5px 0px;
+  text-align: left;
+  width: 700px;
+}
+.my-info-container .contact button {
+  font-size: large;
+  padding: 10px 30px;
+  color: white;
+  background-color: black;
+  transition: .3s;
+}
+.my-info-container .contact button:hover {
+  color: black;
+  background-color: white;
+  cursor: pointer;
+}
+.my-info-container .contact {
+  padding: 45px 0px;
+}
+.skills .skills-icon {
+  display: flex;
+ 
+}
+.skills .skills-icon a i{
+  font-size: 70px;
+  color: black;
+  margin: 30px 20px;
+  transition: 0.3s;
+}
+.skills .skills-icon a i:hover {
+  scale: 1.5;
+  transform: rotate(360deg);
+}
+.skills .skills-icon .skill p {
+  text-align: center;
+  color: black;
+}
+
+.skills .skills-icon a .fa-html5:hover {
+  color: red;
+}
+.skills .skills-icon a .fa-css3-alt:hover {
+  color: blue;
+}
+.skills .skills-icon a .fa-js:hover {
+  color: rgb(255, 255, 1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* This Section is for the Footer*/
+footer {
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+  margin-top: 70px;
+  width: 100%;
+  height: 250px;
+  background-color: rgb(241, 234, 234);
+}
+.links {
+  display: flex;
+  justify-content: center;
+  
+}
+footer .links ul {
+  display: flex;
+
+}
+footer .links ul li{
+  list-style: none;
+
+}
+footer .links ul li a {
+  text-decoration: none;
+  color: black;
+  margin: 20px;
+  font-size: large;
+  transition: .2s;
+}
+footer .links ul li a:hover {
+  text-decoration: underline;
+}
+
+.socials-links {
+  display: flex;
+  justify-content: center;
+}
+.socials-links a {
+  margin: 0px 10px;
+  font-size: 30px;
+  color: black;
+  transition: .3s;
+}
+.socials-links a:hover {
+  transform: scale(1.1);
+}
+.socials-links a:hover .fa-facebook {
+  color: blue;
+}
+.socials-links a:hover .fa-youtube {
+  color: red;
+}
+.socials-links a:hover .fa-discord {
+  color: blue;
+}
+.socials-links a:hover .fa-instagram {
+  color: rgb(182, 95, 110);
+}
+.socials-links a:hover .fa-tiktok {
+  color: black;
+}
+.socials-links a:hover .fa-twitter {
+  color: blue;
+}

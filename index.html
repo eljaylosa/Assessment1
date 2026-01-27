@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@400;700&family=Shippori+Mincho:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>My Portfolio Website</title>
+</head>
+<body>
+  
+  
+  <header id="header">
+    <nav>
+      <span>
+        <a href="https://mingmeow.netlify.app/" target="_blank"><img id="logo" src="icons/cat2.jpg" alt="Cat"></a>
+      </span>
+      <ul>
+        <li class="hide-menu"><a href="#main-section">About Me</a></li>
+        <li class="hide-menu"><a href="#skill-section">My Skills</a></li>
+        <li class="hide-menu"><a href="#projects-section">Projects</a></li>
+        <li class="hide-menu"><a href="#contact-section">Contact</a></li>
+        <nav class="mobile-nav">
+          <button onclick="toggleMenu()">&#8801</button>
+          <ul id="menu">
+            <li><a href="#main-section">About Me</a></li>
+            <li><a href="#skill-section">My Skills</a></li>
+            <li><a href="#projects-section">Projects</a></li>
+            <li><a href="#contact-section">Contact</a></li>
+          </ul>
+        </nav>
+        <li>
+          <div class="music" id="music">
+            <img
+              id="music-icon"
+              src="icons/plato.png"
+              alt="Music"
+              height="50"
+              width="50"
+            >
+          
+            <div id="music-menu">
+          
+              <!-- playlist -->
+              <ul class="playlist">
+                <li onclick="selectMusic('music/track1.mp3', this)">Track 1</li>
+                <li onclick="selectMusic('music/track2.mp3', this)">Track 2</li>
+                <li onclick="selectMusic('music/track3.mp3', this)">Track 3</li>
+                <li onclick="selectMusic('music/track4.mp3', this)">Track 4</li>
+                <li onclick="selectMusic('music/track5.mp3', this)">Track 5</li>
+                <li onclick="selectMusic('music/track6.mp3', this)">Track 6</li>
+              </ul>
+          
+              <!-- controls -->
+              <div class="controls">
+                <button onclick="playMusic()">▶</button>
+                <button onclick="pauseMusic()">⏸</button>
+                <button onclick="stopMusic()">⏹</button>
+              </div>
+              
+          
+              <!-- progress -->
+              <div class="timeline-container">
+                <span id="current-time">0:00</span>
+                <input type="range" id="progress" value="0" min="0" step="1">
+                <span id="duration">0:00</span>
+              </div>
+
+                <!-- volume -->
+              <div class="volume-container">
+                <span>🔉</span>
+                <input type="range" id="volume" min="0" max="1" step="0.01" value="0.5">
+              </div>
+            </div>
+          
+            <audio id="audio"></audio>
+          </div>
+          
+        </li>
+      </ul>
+      
+      <div class="lanterns">
+        <div class="lantern"></div>
+        <div class="lantern"></div>
+        <div class="lantern"></div>
+        <div class="lantern"></div>
+        <div class="lantern"></div>
+        <div class="lantern"></div>
+        <div class="lantern"></div>
+        <div class="lantern"></div>
+        <div class="lantern"></div>
+        <div class="lantern"></div>
+        <div class="lantern"></div>
+        <div class="lantern"></div>
+        <div class="lantern"></div>
+        <div class="lantern"></div>
+        <div class="lantern"></div>
+        <div class="lantern"></div>
+        <div class="lantern"></div>
+        <div class="lantern"></div>
+        <div class="lantern"></div>
+        <div class="lantern"></div>
+        <div class="lantern"></div>
+        <div class="lantern"></div>
+        <div class="lantern"></div>
+        <div class="lantern"></div>
+        <div class="lantern"></div>
+        <div class="lantern"></div>
+        <div class="lantern"></div>
+        <div class="lantern"></div>
+        <div class="lantern"></div>
+        <div class="lantern"></div>
+        <div class="lantern"></div>
+      </div> 
+      
+      
+    </nav>
+
+    
+  </header>
+
+  <main class="main-content" id="main-section">
+   <section class="title-section-container">
+    <div class="title-section">
+      <h1>Hi, I'm Eljay Losa</h1>
+      <h3>2nd Year IT Student • <i>Aspiring Web Developer</i></h3>
+      <p>
+        I’m a 2nd year Information Technology student with a strong interest in web development. I enjoy building responsive and visually appealing websites using HTML, CSS, and JavaScript, and I’m continuously learning new technologies to improve my skills. My goal is to grow as a developer and create meaningful digital experiences.
+      </p>
+      <a href="#skill-section">
+        <button class="work-btn">
+        View My Skills
+      </button>
+    </a>
+    </div>
+   </section>
+   <section class="image-section">
+    <img src="images/main-image.jpg" alt="Student's image" class="hero-img">
+   </section>
+  </main>
+
+  <section class="my-skills" id="skill-section">
+    <article class="skill-cards-container">
+      <div class="skill-cards-border">
+        <h3>Front-End</h3>
+        <figure class="cards-container">
+          <div class="cards">
+            <div class="img-container">
+              <a href="https://www.w3schools.com/html/" target="_blank"><img src="images/skills-images/html.png" alt=""></a>
+            </div>
+            <div class="text">HTML</div>
+          </div>
+          <div class="cards">
+            <div class="img-container">
+              <a href="https://www.w3schools.com/Css/" target="_blank"><img src="images//skills-images/css.png" alt=""></a>
+            </div>
+            <div class="text">CSS</div>
+          </div>
+          <div class="cards">
+            <div class="img-container">
+              <a href="https://www.w3schools.com/js/" target="_blank"><img src="images//skills-images/js.png" alt=""></a>
+            </div>
+            <div class="text">JAVASCRIPT</div>
+          </div>
+        </figure>
+        
+        <h3>Back-End</h3>
+        <figure class="cards-container">
+          <div class="cards">
+            <div class="img-container">
+              <a href="https://www.w3schools.com/java/default.asp" target="_blank"><img src="images//skills-images/java.png" alt=""></a>
+            </div>
+            <div class="text">JAVA</div>
+          </div>
+          <div class="cards">
+            <div class="img-container">
+              <a href="https://www.w3schools.com/python/default.asp" target="_blank"><img src="images//skills-images/python.png" alt=""></a>
+            </div>
+            <div class="text">PYTHON</div>
+          </div>
+          <div class="cards">
+            <div class="img-container">
+              <a href="https://www.w3schools.com/cs/index.php" target="_blank"><img src="images//skills-images/csharp.png" alt=""></a>
+            </div>
+            <div class="text">C#</div>
+          </div>
+        </figure>
+      </div>
+    </article>
+
+    <article class="skills-text-container">
+      <div class="text-container">
+        <h2>My Skills</h2>
+        <p>
+          I have experience working with both front-end and back-end technologies. On the front end, I build responsive and user-friendly interfaces using HTML, CSS, and JavaScript. On the back end, I have worked with Java, Python, and C#, allowing me to understand how applications function behind the scenes. I continuously practice and improve my skills to create efficient and well-structured web applications.
+        </p>
+        <a href="#projects-section">
+          <button class="work-btn">
+            View My Projects
+          </button>
+        </a>
+      </div>
+    </article>
+  </section>
+
+  <section class="my-projects" id="projects-section">
+    <div class="my-projects-container">
+      <h2>My Projects</h2>
+      <h3>Some of these projects were made back in my senior high days. 😊</h3>
+      <article class="project-cards-container">
+
+        <a href="https://nexusos.netlify.app/" target="_blank">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="images/project-images/project-nexus.png" alt="">
+            </div>
+            <div class="project-text">
+              <p>Project Nexus</p>
+            </div>
+          </div>
+         </a>
+
+         <a href="https://mingmeow.netlify.app/" target="_blank">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="images/project-images/project-cat.png" alt="">
+            </div>
+            <div class="project-text">
+              <p>Project Cat</p>
+            </div>
+          </div>
+         </a>
+
+         <a href="https://wecollect.netlify.app/" target="_blank">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="images/project-images/project-we-collect.png" alt="">
+            </div>
+            <div class="project-text">
+              <p>We Collect</p>
+            </div>
+          </div>
+        </a>
+      </article>
+      <button id="openProjects" class="work-btn">
+        View All Projects
+      </button>
+    </div>
+  </section>
+
+  <!-- MODAL SECTION -->
+  <section class="show-projects" id="projectsModal">
+    
+    <div class="show-project-container">
+      
+      <!-- CLOSE BUTTON -->
+      <div class="close-btn-container">
+       <button class="close-btn" id="closeProjects">&times;</button>
+      </div>
+     
+      <div class="show-project-header">
+        <h2>My Projects</h2>
+      </div>
+      <div class="show-project-cards-container">
+        <a href="https://mingmeow.netlify.app/" target="_blank">
+          <figure class="show-project-cards">
+            <img src="images/project-images/project-cat.png" alt="">
+            <div class="show-project-text">
+              <h2>Project Cat</h2>
+            </div>
+          </figure>
+        </a>
+
+        <a href="https://nexusos.netlify.app/" target="_blank">
+          <figure class="show-project-cards">
+            <img src="images/project-images/project-nexus.png" alt="">
+            <div class="show-project-text">
+              <h2>Project Nexus</h2>
+            </div>
+          </figure>
+        </a>
+
+        <a href="https://wecollect.netlify.app/" target="_blank">
+          <figure class="show-project-cards">
+            <img src="images/project-images/project-we-collect.png" alt="">
+            <div class="show-project-text">
+              <h2>We Collect</h2>
+            </div>
+          </figure>
+        </a>
+
+        <a href="https://portfolio-ni-eljay.netlify.app/" target="_blank">
+          <figure class="show-project-cards">
+            <img src="images/project-images/project-personal-info.png" alt="">
+            <div class="show-project-text">
+              <h2>Personal Information</h2>
+            </div>
+          </figure>
+        </a>
+
+        <a href="contents/PTASK_04 - Fortpolio/main-index.html" target="_blank">
+          <figure class="show-project-cards">
+            <img src="images/project-images/project-portfolio.png" alt="">
+            <div class="show-project-text">
+              <h2>Personal Portfolio</h2>
+            </div>
+          </figure>
+        </a>
+
+        <a href="contents/Cooking Website/index.html" target="_blank">
+          <figure class="show-project-cards">
+            <img src="images/project-images/project-cooking-hub.png" alt="">
+            <div class="show-project-text">
+              <h2>Cooking Hub</h2>
+            </div>
+          </figure>
+        </a>
+
+        <a href="contents/Four Basic Operations/four-basic-operations.html" target="_blank">
+          <figure class="show-project-cards">
+            <img src="images/project-images/project-calculator.png" alt="">
+            <div class="show-project-text">
+              <h2>Calculator</h2>
+            </div>
+          </figure>
+        </a>
+
+        <a href="contents/Multiple Choices/F_PTASK01_LOSA.html" target="_blank">
+          <figure class="show-project-cards">
+            <img src="images/project-images/project-quiz.png" alt="">
+            <div class="show-project-text">
+              <h2>Quiz Web</h2>
+            </div>
+          </figure>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Gagawin ko tong masesend yung message nila sa email ko hehe -->
+  <footer id="contact-section">
+    <div class="main-form-container">
+      <p>If you have any questions, feel free to</p>
+      <h1>Contact Me</h1>
+      <form id="contactForm" method="POST">
+        <input id="name" type="text" placeholder="Your Name" required name="name">
+        <input id="email" type="email" placeholder="Your Email"required name="email">
+        <textarea id="message" name="message" placeholder="Your Message" rows="5" cols="30"></textarea>
+        <button type="submit" id="sendMessage">Send Message</button>
+      </form>
+    </div>
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

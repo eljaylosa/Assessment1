@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #F9EFDB;
+ 
+}
+body:active {
+  cursor: pointer;
+}
+main {
+  width: 100%;
+  height: 100%;
+  font-family: Poppins;
+}
+.title {
+  text-decoration: none;
+  color: black;
+  font-size: x-large;
+  
+}
+.nav_links_page {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #EBD9B4;
+  padding: 5%;
+  height: 110px;
+  width: 100%;
+}
+
+.nav_links ul {
+  display: flex;
+  list-style-type: none;
+}
+.nav_links li a{
+  position: relative;
+  text-decoration: none;
+  color: black;
+  margin: 0px 27px;
+  font-size: 20px;
+}
+.nav_links ul li .a::before,
+.nav_links ul li .a::after  {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  height: 4px;
+  width: 0;
+  background-color: rgb(53, 50, 50);
+  border-radius: 50px;
+  transition: 0.3s all ease-in-out;
+  
+}
+
+.nav_links ul li .a::before {
+  top: 0;
+  left: 0;
+
+}
+.nav_links ul li .a::after {
+  bottom: 0;
+  right: 0;
+}
+
+.nav_links ul li .a:hover::before {
+    right: 0;
+    left: auto;
+    width: 100%;
+    background-color: rgb(53, 50, 50);
+}
+.nav_links ul li .a:hover::after {
+  right: auto;
+  left: 0;
+  width: 100%;
+  background-color:  rgb(53, 50, 50);
+}
+.nav_links ul li .a:hover {
+  color: rgb(168, 166, 166);
+}
+
+.nav_links ul li .a {
+  padding: 20px;
+}
+
+.nav_links button a {
+  text-decoration: none;
+  border-radius: 5px;
+}
+.nav_links li a:hover{
+  text-decoration: underline;
+  color: gray;
+}
+.nav_links ul li a:hover {
+  color: black;
+  text-decoration: none;
+  border-color: rgb(0, 0, 0);
+  transform: scale(1.1, 1.1);
+  text-decoration: dotted;
+}
+.nav_links li .git {
+  padding: 10px;
+  border: 3px solid black;
+}
+.nav_links li .git:hover {
+  background-color: wheat;
+  cursor: pointer;
+}
+
+
+.main_page {
+  display: content;
+  background-image: url(img/white\ background.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+}
+
+.main_page_title {
+  display: flex;
+  justify-content: center;
+  font-size: xx-large;
+}
+
+.img_search {
+  height: 40px;
+}
+input {
+  width: 600px;
+  height: 40px;
+  text-align: left;
+  border: none;
+  padding: 20px;
+ 
+}
+
+.input:active {
+  background-color: whitesmoke;
+  
+} 
+input:focus {
+  background-color: white;
+  color: black;
+  outline: none;
+ 
+}
+
+.search_bar {
+  border-radius: 10px;
+  width: 600px;
+  margin: 10px;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  background-color: white;
+  margin-left: 33.5%;
+  padding: 0;
+  
+}
+.search_bar:hover {
+  transform: scale(1.1, 1.1);
+  transition: 0.3s;
+}
+
+.search_bar_btn {
+  margin: 0 5px;
+  background-color: white;
+  font-size: large;
+  height: 40px; 
+  width: 150px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.search_bar_btn:hover {
+  background-color: rgb(236, 236, 236);
+  transition-duration: 0.3s;
+}
+.search_bar_btn:active {
+  background-color: white;
+  transition: none;
+}
+.main_page {
+  display: block;
+  background-color: whitesmoke;
+  height: 500px;
+  padding-top: 185px;
+  justify-content: center;
+  text-align: center;
+}
+
+.see_more {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 70%;
+}
+.see_more_href p a {
+  text-decoration: none;
+  color: black;
+}
+.see_more_href p a:hover {
+  text-decoration: underline;
+  color: gray;
+}
+
+#coms {
+  border-radius: 10px;
+}
+.comments_page {
+  margin-top: 70px;
+ background-color: beige;
+ height: 195px;
+ padding: 20px;
+ justify-content: center;
+}
+.comment-textarea {
+  background-color: beige;
+  text-align: left;
+}
+.comment-textarea:hover {
+  background-color: beige;
+  
+}
+.comment-textarea:focus {
+  background-color: beige;
+  color: black;
+}
+.comment-input {
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 4px;
+  margin: 30px 0px;
+  justify-content: center;
+}
+.comment-textarea {
+  flex: 1;
+  border: none;
+  resize: none;
+  margin-top: 10px ;
+  padding: 8px;
+  margin-right: 8px;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 1640px;
+}
+
+
+.delivery_page {
+  padding: 30px;
+  border-radius: 10px;
+  background-color: bisque;
+  margin-top: 80px;
+  height: 650px;
+}
+
+
+
+.comments-btn {
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 30px;
+  background-color: beige;
+  color: black;
+  border-color: gray;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.25s,
+  color 0.s;
+}
+.comments-btn:hover {
+  background-color: whitesmoke;
+  color: black;
+}
+.comments-btn:active {
+  background-color: beige ;
+  color: black;
+}
+
+.comments-container {
+  width: 80%;
+  margin: 0 auto;
+}
+.comment {
+  border: 1px solid #ccc;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.customer-comments {
+  display: block;
+  padding: 50px 40px;
+}
+.iframe_video {
+  margin-top: 30px;
+  margin-left: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+#btn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;	
+  border: none;
+  outline: none;
+  background-color: rgb(202, 191, 154);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+#btn:hover {
+  background-color: #bebebe;
+}
+
+.order_btn {
+  margin: 12px;
+  padding: 10px;
+  font-size: 13px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: black;
+  background-color: yellow;
+  border: none;
+  border-radius: 15px;
+  box-shadow:  0 9px #999;
+ }
+ .order_btn:hover {
+  background-color: wheat;
+}
+
+.order_btn:active {
+  background-color: #999;
+  box-shadow: 0 0px  #999;
+  transform: translateY(4px);
+ }
+ .order_btn::after {
+  background-color: #999;
+ }
+ .des {
+  margin: 8px;
+ }
+
+
+
+
+/* Css For Menu */
+
+.recipe_img_1,
+.recipe_img_2,
+.recipe_img_3 {
+              
+              border: 1px solid #ccc;
+              display: block;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+              width: 290px;
+              height: 400px;      
+              background-color: beige;    
+              padding: 20px;
+              transition: 0.3s;
+}
+
+.recipe_img_1:hover,
+.recipe_img_2:hover,
+.recipe_img_3:hover {
+      font-size: large;
+      font-weight: bold;     
+      transform: scale(1.1,1.1);
+      cursor: pointer;
+      box-shadow: 20px 10px black;
+      background-color: wheat;
+      border-radius: 30px;
+}
+
+.recipe_page {
+  margin: 50px 10px;
+  
+}
+.recipe_page_title {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
+      .recipe_img {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 20%;
+        padding: 0%;   
+        
+      }
+      .recipe_img #img1:hover {
+        opacity: 0.8;
+        transition: 0.3;
+      }
+      .recipe_img #img2:hover {
+        opacity: 0.8;
+        transition: 0.3;
+      }
+      .recipe_img #img3:hover {
+        opacity: 0.8;
+        transition: 0.3;
+      }
+      .recipe_img_1 a img,
+      .recipe_img_2 a img,
+      .recipe_img_3 a img {
+        display: flex;
+        justify-content: center;
+        border-radius: 10px;
+        width: 250px;
+        height: 250px;
+      }
+
+      .get {
+        transition: 0.3s;
+        padding: 10px;
+      }
+      .get:hover {
+        cursor: pointer;
+      }
+
+
+
+
+
+
+
+
+
+ 
+
+     
+
+      
+
+

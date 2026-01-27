@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    span {
+      font-size: xx-large;
+    }
+    .dot-ani-1 {animation-name: ani-1; animation-duration: 2s; position: relative; animation-iteration-count: infinite;}
+    .dot-ani-2 {animation-name: ani-2; animation-duration: 2s; position: relative; animation-iteration-count: infinite;}
+    .dot-ani-3 {animation-name: ani-3; animation-duration: 2s; position: relative; animation-iteration-count: infinite;}
+
+    @keyframes ani-1 {
+      0% {top: -5px;}
+      50% {top: -10px;}
+    }
+    @keyframes ani-2 {
+      50% {top: -5px;}
+    }
+    @keyframes ani-3 {
+      100% {top: -10px;}
+    }
+  </style>
+  <style>
+    
+  </style>
+</head>
+<body>
+  <span>Your order is now processing <span class="dot-ani-1">.</span><span class="dot-ani-2">.</span><span class="dot-ani-3">.</span></span>
+</body>
+</html>

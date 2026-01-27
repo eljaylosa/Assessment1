@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preparing your order...</title>
+    <link rel="icon" type="image/x-icon" href="../../img/webtabicon.png">
+    <style>
+       
+        body {
+            background-color: white;
+            justify-content: center;
+            padding-top: 3%;
+            background-image: url(../../img/1f2ed796410477e1a734a08a516a7c9e.jpg);
+            background-size: cover;
+            text-align: center;
+        }
+        h1 {
+            font-size: x-large;
+            background-color: bisque;
+            width: 450px;     
+            margin-left: 690px;
+            padding: 15px;
+        }
+        .recipe-img {
+            display: flex;
+            justify-content: center;
+            
+        }
+            img {
+            border: 1px solid black ;
+        }
+        img:hover {
+            opacity: 0.8;
+             transition: 0.3s;
+             cursor: pointer;
+        }
+
+        .recipe_order_page {
+            text-align: center;
+            box-shadow: 10px 10px 30px black;
+            display: flex;
+            padding-top: 50px;
+            justify-content: center;
+            width: 1000px;
+            background-color: beige;
+            height: 440px;
+            margin-left: 430px;
+            display: flex;
+        }
+        .recipe_description:hover {
+            box-shadow: 10px 10px black;
+            cursor: pointer;
+            transform: scale(1.1, 1.1);
+            
+            font-size: large;
+            font-weight: bold;
+        }
+       .recipe_description {
+        text-align: center;
+        background-color: bisque;
+        justify-content: center;
+        border: 1px solid;
+        width: 500px;
+        height: 380px;
+        margin: 0 15px;
+        transition: 0.3s;
+       }
+    
+     .order-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 175px;
+        margin-left: 110px ;
+        width: 150px;
+        height: 30px;
+        background-color: red;
+        color: whitesmoke;
+        border-color: gray;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: background-color 0.25s,
+        color 0.s;
+      }
+    .order {
+        display: block;
+        background-color: whitesmoke;
+        height: 240px;
+        margin-left: 30px;
+        border: 1px solid grey;
+        width: 430px;
+     }
+     .order .input {
+        margin-bottom: 10px;
+        vertical-align: bottom;
+        height: 30px;
+        width: 80px;
+      
+     }
+     .order button {
+        
+        padding: 10px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: black;
+        background-color: yellow;
+        border: none;
+        border-radius: 15px;
+        box-shadow:  0 9px #999;
+     }
+     .order button:hover{
+        background-color: wheat;
+        cursor: pointer;
+     }
+     .order button:active {
+        background-color: #999;
+        box-shadow: 0 0px  #999;
+        transform: translateY(4px);
+     }
+     button {
+        padding: 10px;
+     }
+
+    input {
+        margin-top: 10px;
+    }
+   .order .street {
+    text-align: center;
+    width: 250px;
+   }
+   .order .select select option {
+    text-align: center;
+   }
+   .notice p{
+    margin-left: 39%;
+    background-color: wheat;
+    width: 350px;
+    text-align: center;
+    padding: 20px;
+    justify-content: center;
+    
+   }
+   .notice span {
+    font-weight: 600;
+    font-size: large;
+   }
+  
+    </style>
+</head>
+<body>
+    <h1>Choose your preferences for your order</h1>
+        <div class="recipe_order_page">    
+            <div class="recipe_img">
+                <img src="../../img/menu-img/Ginataang Sitaw.jpg" alt="Ginataang Sitaw" width="350px" height="380px">
+            </div>
+            <form action="../../result-forms/mainpage-result/main-form-1.html">
+                <div class="recipe_description">
+                    <h2>Ginataang Sitaw</h2>
+                    <p style="color: gray;">₱80</p>
+                    <div class="order">
+                        <P>Quantity</P>
+                        <input class="input" type="number" min="1" max="15" required>
+                        <div class="select">
+                            <select name="location" id="loc" required>
+                                <option class="select-location" value="Select your Location" role="alert" >Select your Barangay</option>
+                                <option value="Alangan">Alangan</option>
+                                <option value="Bo. Luz">Bo. Luz</option>
+                                <option value="Duale">Duale</option>
+                                <option value="Kitang-l">Kitang-l</option>
+                                <option value="Landing">Landing</option>
+                                <option value="Lamao">Lamao</option>
+                                <option value="Poblacion">Poblacion</option>
+                                <option value="Reformista">Reformista</option>
+                                <option value="Saint Francis-l">Saint Francis-l (Bo. Roxas)</option>
+                                <option value="Saint Francis-ll">Saint Francis-ll (Bacong)</option>
+                                <option value="Wawa">Wawa</option>
+                            </select>
+                        </div>
+                        <input class="street" type="text" placeholder="Your Street" required maxlength="30">
+                        <p><a href="../../result-forms/mainpage-result/main-form-1.html"><button>Order Now</button></a></p>
+                    </div>       
+                </div>
+            </form>     
+        </div>
+       <div class="notice">
+        <p style="color: red;"><span>Notice: </span> We deliver on Limay area only *</p> 
+       </div>
+</body>
+</html>

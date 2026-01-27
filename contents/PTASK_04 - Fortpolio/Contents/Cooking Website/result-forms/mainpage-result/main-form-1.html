@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="icon" type="image/x-icon" href="../../img/webtabicon.png">
+    <ion-icon name="chevron-up-outline"></ion-icon>
+    <title>Your Order has been process</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        body {
+            display: flex;
+            background-color: whitesmoke;
+            justify-content: center;
+            text-align: center;
+            background-image: url(../../img/form-bg.enhanced.png);
+            background-repeat: no-repeat;
+            font-family: Poppins;
+        }
+        .res {
+            background: rgba(245,245,220,.8);
+            margin-top: 45%;
+            text-align: center;
+            height: 250px;
+            width: 550px;
+            padding: 10px;
+        }
+        .res h2 {
+            color: rgb(117, 104, 104);
+        }
+        .input {
+            margin-top: 100px;
+            margin: 30px;
+            background-color: beige;
+            padding: 20px;
+            text-align: center;
+            align-items: center;
+            transition: .2s;
+        }
+        .input:hover {
+            transform: scale(1.1, 1.1);
+            box-shadow: 5px 10px rgb(46, 41, 41);
+            cursor: pointer;
+            border-radius: 50px;
+        }
+        .input:active {
+            transform: scale(1,1);
+            box-shadow: 0px 0px black;
+        } 
+    </style>
+</head>
+
+<script>
+    function playSound() {
+        var sound = document.getElementById("audio");
+        sound.play();
+
+        alert("Your Order has been Processed!!")
+    }
+</script>
+
+<body onload="playSound()">
+    <audio id="audio">
+        <source src="cha ching money.mp3">
+    </audio>
+    <div class="container">
+        <div class="form">
+            <div class="res">
+                <h1>Your Order has been processed.</h1>
+                <h2>Thank You for Ordering!</h2>
+                <a href="../../recipes2.html"><input class="order-again input" type="button" value="Order Again"></a>
+                <a href="../../index.html"><input class="back-home input" type="button" value="Back to Home"></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

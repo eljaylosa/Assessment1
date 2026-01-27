@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      justify-content: center;
+    }
+    .container {
+      width: 250px;
+      height: 250px;
+      background-color: blue;
+      justify-content: center;
+      padding: 50px;
+    }
+    .img-container {
+      justify-content: center;
+      width: 250px;
+      height: 250px;
+      background-color: red;
+    }
+    
+    .img-container img:hover {
+      animation-name: img-hover;
+      cursor: pointer;
+      animation-duration: 0.5s;
+      animation-iteration-count:initial;
+      position: relative;
+    }
+    .img-container img:active {
+      width: 300px;
+      height: 300px;
+    }
+    @keyframes img-hover {
+      0% {width: 250px; height: 250px;}
+      100% {width: 300px; height: 300px;}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="img-container">
+      <img src="../img/images (1).jpg" alt="" height="250px" width="250px">
+    </div>
+  </div>
+</body>
+</html>

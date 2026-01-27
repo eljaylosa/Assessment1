@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <script src="https://kit.fontawesome.com/57a739b7d7.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <title>My Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="img/Website Icon Logo.png">
+</head>
+<style>
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Philosopher', Poppins;
+}
+
+/* This Section is for the Nav Bar*/
+.nav-bar-container {
+  font-size: medium;
+  display: flex;
+  padding: 10px;
+  height: 100px;
+  width: 100%;
+  background: transparent;
+  transition: .5s;
+  backdrop-filter: blur(15px);
+  justify-content: center;
+  z-index: 1;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + section {
+  padding-top: 120px;
+}
+.nav-bar-container:hover {
+  box-shadow: 0px 5px gray;
+}
+.nav-bar {
+  display: flex;
+  align-items: center;
+}
+.nav-bar .logo {
+  margin-right: 800px;
+}
+.nav-links {
+  display: flex;
+}
+.nav-links ul {
+  display: flex;
+  list-style-type: none;
+}
+.nav-links ul li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  margin: 10px 20px;
+}
+
+/* This Section is for the main content*/
+
+section {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.title h1 {
+  font-size: 50px;
+  text-align: center;
+}
+.projects {
+  display: flex;
+  width: 100%;
+}
+.projects .row .box {
+  margin: 100px 10px;
+  width: 350px;
+  height: 250px;
+  
+}
+.projects .row .box .img img {
+  width: 350px;
+  height: 250px;
+
+}
+.projects .row .box .img {
+  overflow: hidden;
+  position: relative;
+ 
+}
+.grayscale {
+  filter: grayscale(100%);
+  transition: 0.5s;
+
+}
+.img:hover img{
+  filter: none;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.projects .row .box .des {
+  padding: 5px 0;
+}
+.projects .row .box .des h2 {
+  font-weight: 700;
+  font-size: xx-large;
+}
+.projects .row .box .des p {
+  margin-top: 5px;
+  font-size: larger;
+}
+
+
+/*This Section is for the footer*/
+footer {
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+  margin-top: 155px;
+  width: 100%;
+  height: 250px;
+  background-color: rgb(241, 234, 234);
+}
+.links {
+  display: flex;
+  justify-content: center;
+  
+}
+footer .links ul {
+  display: flex;
+
+}
+footer .links ul li{
+  list-style: none;
+
+}
+footer .links ul li a {
+  text-decoration: none;
+  color: black;
+  margin: 20px;
+  font-size: large;
+  transition: .2s;
+}
+footer .links ul li a:hover {
+  text-decoration: underline;
+}
+
+.socials-links {
+  display: flex;
+  justify-content: center;
+}
+.socials-links a {
+  margin: 0px 10px;
+  font-size: 30px;
+  color: black;
+  transition: .3s;
+}
+.socials-links a:hover {
+  transform: scale(1.1);
+}
+.socials-links a:hover .fa-facebook {
+  color: blue;
+}
+.socials-links a:hover .fa-youtube {
+  color: red;
+}
+.socials-links a:hover .fa-discord {
+  color: blue;
+}
+.socials-links a:hover .fa-instagram {
+  color: rgb(182, 95, 110);
+}
+.socials-links a:hover .fa-tiktok {
+  color: black;
+}
+.socials-links a:hover .fa-twitter {
+  color: blue;
+}
+</style>
+<body>
+  <div class="nav-bar-container" id="nav-bar">
+    <nav class="nav-bar">
+      <div class="logo">
+        <a href="main-index.html"><img src="img/Website-Logo.png" alt="logo" height=75px"></a>
+      </div>
+       
+      <div class="nav-links">
+        <ul>
+          <li><a href="main-index.html">HOME</a></li>
+            <li><a href="resume.html">ABOUT ME</a></li>
+            <li><a href="portfolio.html">PORTFOLIO</a></li>
+            <li><a href="contact.html">CONTACT ME</a></li>
+            <li><a href="Log in/LogIn-UI.html">LOG OUT</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <section>
+      <div class="main-container">
+        <div class="title">
+          <h1>My Recent <br> Projects</h1>
+        </div>
+
+        <div class="projects">
+          <div class="row">
+            <div class="box">
+              <div class="img">
+                <a href="Contents/Four Basic Operations/four-basic-operations.html"><img src="img/projects-img/calculator.jpg" alt="" title="Calculator" class="grayscale"></a>
+              </div>
+              <div class="des">
+                <h2>Project Website</h2>
+                <p>Web Calculator</p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="img">
+                <a href="/"><img src="img/projects-img/coming soon.jpg" alt="" title="???" class="grayscale"></a>
+              </div>
+              <div class="des">
+                <h2>Project Website</h2>
+                <p>Coming soon...</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="box">
+              <div class="img">
+                <a href="Contents/Multiple Choices/F_PTASK01_LOSA.html"><img src="img/projects-img/quizwebsite.jpg" alt="" title="Quiz" class="grayscale"></a>
+              </div>
+              <div class="des">
+                <h2>Project Website</h2>
+                <p>Web Quiz</p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="img">
+                <a href="/"><img src="img/projects-img/coming soon.jpg" alt="" title="???" class="grayscale"></a>
+              </div>
+              <div class="des">
+                <h2>Project Website</h2>
+                <p>Coming soon...</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="box">
+              <div class="img">
+                <a href="Contents/Cooking Website/index.html"><img src="img/projects-img/cookingwebsite.jpg" alt="" title="Cooking" class="grayscale"></a>
+              </div>
+              <div class="des">
+                <h2>Project Website</h2>
+              <p>Web Food Site</p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="img">
+                <a href="/"><img src="img/projects-img/coming soon.jpg" alt="" title="???" class="grayscale"></a>
+              </div>
+              <div class="des">
+                <h2>Project Website</h2>
+                <p>Coming soon...</p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="logo">
+      <a href="main-index.html"><img src="img/Eljay.png" alt="logo" height=75px"></a>
+    </div>
+    <div class="links">
+      <ul>
+        <li><a href="resume.html">About Me</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+      </ul>
+    </div>
+    <div class="socials-links">
+          <a href="https://www.facebook.com/ljlosa.69/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.youtube.com/channel/UCW8XF8E4Q8L4HJE-rb8V0cw" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://discord.gg/qTSyUrqA" target="_blank"><i class="fa-brands fa-discord"></i></a>
+          <a href="https://www.instagram.com/ljlosa_g/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.tiktok.com/@yaabaaii" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="https://twitter.com/ljlosa" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+    </div>
+</footer>
+  <script>
+    window.onscroll = function() {ScrollFunction()}; 
+
+    var navbar = document.getElementById('nav-bar');
+    var scrollSticky = navbar.offsetTop;
+
+    function ScrollFunction() {
+      if (window.pageYOffset >= scrollSticky) {
+        navbar.classList.add("sticky")
+      }
+      else {
+        navbar.classList.remove("sticky");
+      }
+    }
+    
+  </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .slider-container {
+  position: relative;
+}
+
+.slides {
+  display: flex;
+  overflow: hidden;
+}
+
+.slides img {
+  width: 250px;
+  display: none;
+}
+
+.slides img:first-child {
+  display: block;
+}
+
+</style>
+<script>
+  let slideIndex = 1;
+showSlides(slideIndex);
+
+function changeSlide(n) {
+  showSlides((slideIndex += n));
+}
+
+function showSlides(n) {
+  let i;
+  const slides = document.getElementsByClassName("slides")[0].getElementsByTagName("img");
+
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  slides[slideIndex - 1].style.display = "block";
+}
+
+</script>
+<body>
+  <div class="slider-container">
+    <div class="slides">
+      <img src="../img/images (1).jpg" alt="Image 1" height="250" width="250px">
+      <img src="../img/images.jpg" alt="Image 2" height="250" width="250px">
+      <img src="../img/images (1).jpg" alt="Image 3" height="250" width="250px">
+      <!-- Add more images as needed -->
+    </div>
+    <button class="prev" onclick="changeSlide(-1)">Previous</button>
+    <button class="next" onclick="changeSlide(1)">Next</button>
+  </div>
+  
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      width: 500px;
+      height: 500px;
+      background-color: blue;
+      
+    }
+
+    div:hover {
+      cursor: pointer;
+      animation-name: hover;
+      animation-duration: 0.5s;
+      animation-iteration-count: infinite;
+      position: relative;
+    }
+
+    @keyframes hover {
+      0% {background-color: blue; top: 0px; left: 0px;}
+      25% {background-color: violet; top: 0px; left: 500px;}
+      50% {background-color: yellow; top: 500px; left: 500px;}
+      75% {background-color: brown; top: 500px; left: 0px;}
+      100% {background-color: blue; top: 0px; left: 0px;}
+    }
+  </style>
+</head>
+<body>
+  <div class="hello">
+
+  </div>
+</body>
+</html>

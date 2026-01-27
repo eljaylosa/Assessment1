@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Play Audio</title>
+</head>
+<script>
+  function playSound() {
+    document.getElementById("audio").play();
+    
+    alert("tang in amo")
+  }
+</script>
+<body onpageshow="playSound()">
+
+
+<audio id="audio">
+  <source src="../audio/cha ching money.mp3" type="audio/mpeg">
+</audio>
+
+</body>
+</html>
