@@ -1,4 +1,5 @@
-    
+    // Some js functions to handle front-end 
+
     // Modal Functions
     const openBtn = document.getElementById("openProjects");
     const closeBtn = document.getElementById("closeProjects");
@@ -146,8 +147,8 @@
       }
     });
 
-    // send message to my email
 
+    // send message to my email
     const form = document.getElementById("contactForm");
 
     form.addEventListener("submit", async (e) => {
@@ -172,6 +173,56 @@
         alert("Failed to send message. Please try again later.");
       }
     });
+
+    // lantern hover animation
+    document.querySelectorAll(".lantern").forEach(lantern => {
+      lantern.addEventListener("mousemove", e => {
+        const rect = lantern.getBoundingClientRect();
+        const centerX = rect.left + rect.width / 2;
+        const deltaX = e.clientX - centerX;
+  
+        const rotate = Math.max(-15, Math.min(15, deltaX * 0.4));
+        lantern.style.transform = `rotate(${rotate}deg)`;
+        lantern.style.animationPlayState = "paused";
+      });
+  
+      lantern.addEventListener("mouseleave", () => {
+        lantern.style.transform = "";
+        lantern.style.animationPlayState = "running";
+      });
+    });
+    
+    // Open themes function
+    const shoeThemes = document.getElementById("showThemes");
+
+    shoeThemes.addEventListener("click", () => {
+      const themes = document.getElementById("themes");
+      themes.style.display = themes.style.display === "block" ? "none" : "block";
+    });
+
+    // Change Theme Function
+
+    // toggle  themes func
+    const themes = ["default-theme", "dark-theme", "cute-theme"];
+
+    function applyTheme(theme) {
+      document.body.classList.remove(...themes);
+      document.body.classList.add(theme);
+
+      document
+        .querySelectorAll(".main-content, .my-skills, .skill-cards-border")
+        .forEach(el => {
+          el.classList.remove(...themes);
+          el.classList.add(theme);
+        });
+    }
+
+    document.getElementById("default-theme").onclick = () => applyTheme("default-theme");
+    document.getElementById("dark-theme").onclick = () => applyTheme("dark-theme");
+    document.getElementById("cute-theme").onclick = () => applyTheme("cute-theme");
+
+
+
   
 
 

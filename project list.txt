@@ -6,3 +6,17 @@ project list:
   personal portfolio
   quiz website
   calculator
+
+bruh kulang pa ng readme at about the website and credits (ilalagay sa bottom)
+also kapag on mobile, yung lantern humaharang
+
+bruh try den naten lagyan ng theme toggle like darkmode shit
+pero saken ibat ibat design like, yun nga retro japanese, then pinkish pero mag kakaron tayo ng 3 design 
+1. japanese retro
+2. dark mode design
+3. cute version design
+
+
+also yung responsiveness ng size 811px, bale gagawen naten, i soshow na natin yung hamburger o yung mobile nav
+
+then clean nalang ng designs

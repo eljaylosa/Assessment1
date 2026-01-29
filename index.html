@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@400;700&family=Shippori+Mincho:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon/jpg" href="images/main-images/main-image.jpg" sizes="16x16">
   <title>My Portfolio Website</title>
 </head>
 <body>
@@ -20,6 +21,18 @@
         <li class="hide-menu"><a href="#skill-section">My Skills</a></li>
         <li class="hide-menu"><a href="#projects-section">Projects</a></li>
         <li class="hide-menu"><a href="#contact-section">Contact</a></li>
+        <li>
+          <div class="change-theme">
+            <button class="change-theme-btn theme-btn" id="showThemes">Change Theme</button>
+          </div>
+          <div class="themes" id="themes">
+            <div class="theme-container">
+              <button class="theme-btn" id="default-theme">Japanese Retro Theme (Default)</button>
+              <button class="theme-btn" id="dark-theme">Dark Theme</button>
+              <button class="theme-btn" id="cute-theme">Cute Theme (For someone)</button>
+            </div>
+          </div>
+        </li>
         <nav class="mobile-nav">
           <button onclick="toggleMenu()">&#8801</button>
           <ul id="menu">
@@ -135,7 +148,7 @@
     </div>
    </section>
    <section class="image-section">
-    <img src="images/main-image.jpg" alt="Student's image" class="hero-img">
+    <a href="https://www.facebook.com/ljlosa.69/" target="_blank"><img src="images/main-images/main-image.jpg" alt="Student's image" class="hero-img"></a>
    </section>
   </main>
 
@@ -205,8 +218,12 @@
 
   <section class="my-projects" id="projects-section">
     <div class="my-projects-container">
-      <h2>My Projects</h2>
-      <h3>Some of these projects were made back in my senior high days. 😊</h3>
+      <h2>My Recent Projects</h2>
+      <h3>
+        Some of my projects were made back in my senior high days. 😊
+        <br>
+        So expect some bugs, unresponsiveness, and some other issues
+      </h3>
       <article class="project-cards-container">
 
         <a href="https://nexusos.netlify.app/" target="_blank">
@@ -339,6 +356,7 @@
 
 
   <!-- Gagawin ko tong masesend yung message nila sa email ko hehe -->
+  <!-- update: di sya gumana sa netlify nung ni publish ko sya don, turns out di pala kaya i handle ng netlify ang node.js for backend sana which is sucks -->
   <footer id="contact-section">
     <div class="main-form-container">
       <p>If you have any questions, feel free to</p>

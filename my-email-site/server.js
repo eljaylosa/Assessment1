@@ -1,3 +1,7 @@
+// netlify diff - di pala kaya i handle ng netlify ang node.js for backend sana which is sucks
+// P.S. this shi only works on my localhost server vruh
+// ba't kase may bayad pa mga servers ngina naman oh
+
 require('dotenv').config({ path: __dirname + '/.env' });
 const express = require("express");
 const nodemailer = require("nodemailer");
@@ -14,7 +18,7 @@ app.post("/send-email", async (req, res) => {
     return res.status(400).json({ message: "All fields are required" });
   }
 
-  // Create transporter
+  // create transporter
   let transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
@@ -26,7 +30,7 @@ app.post("/send-email", async (req, res) => {
   let mailOptions = {
     from: process.env.GMAIL_USER,
     replyTo: email,
-    to: process.env.GMAIL_USER, // you can change to your personal email
+    to: process.env.GMAIL_USER, 
     subject: `New message from ${name}`,
     text: message,
     html: `<p><b>Name:</b> ${name}</p>
@@ -41,7 +45,7 @@ app.post("/send-email", async (req, res) => {
   } catch (err) {
     console.error("Full Nodemailer error:", err);
 
-    // Send error details back to the frontend
+    // send error details back to the frontend
     let errorMsg = "Error sending email";
     if (err.response) {
       errorMsg += `: ${err.response}`;
