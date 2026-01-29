@@ -223,6 +223,20 @@
 
 
 
+    // show website details or about the website
+    const websiteDetails = document.getElementById("details");
+    function showWebsiteDetails() {
+      websiteDetails.style.display = websiteDetails.style.display === "block" ? "none" : "block";
+    } 
+
+    // hide details
+    function closeWebsiteDetails() {
+      const closeDetails = document.getElementById("close-details");
+      websiteDetails.style.display = "none";
+    }
+
+
+
   
 
 
