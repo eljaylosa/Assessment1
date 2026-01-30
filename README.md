@@ -2,11 +2,17 @@
 A responsive personal portfolio website with Japanese retro aesthetics, animated lanterns, theme switching, and smooth UI interactions.
 
 ✨ Features
+  
   -🎨 Multiple themes (Default(Japanese Retro) / Dark / Cute)
+ 
   -🏮 Animated responsive lanterns
+ 
   -📱 Fully responsive (desktop → mobile)
+  
   -🎵 Built-in music player 
+  
   -💼 Projects showcase with modal view
+  
   -✨ Subtle grain & retro visual effects
 
 🛠️ Built With
